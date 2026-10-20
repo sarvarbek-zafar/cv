@@ -169,7 +169,12 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 /* ═══ SERTIFIKATLAR ═══ */
 .cert{background:var(--ivory);border-radius:3px;box-shadow:var(--frame-sm);padding:18px 22px;margin:6px 6px 26px}
 .cert-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.seal{width:48px;height:48px;flex-shrink:0;display:grid;place-items:center;color:var(--ivory);font-family:var(--display);font-weight:700}
+.issuer{width:118px;height:48px;flex-shrink:0;display:grid;place-items:center;border-radius:6px;padding:0 12px;box-shadow:0 0 0 2px var(--grout),0 0 0 3px var(--ochre)}
+.issuer img{max-width:100%;max-height:22px;display:block}
+.issuer.coursera{background:#fff;border:1px solid #D5DEF5}
+.issuer.mohirdev{background:#00969C}
+.issuer.mohirdev img{max-height:20px}
+.cert .stack{margin-top:12px}
 .cert h3{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--lapis)}
 .cert .meta{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft)}
 .cert-actions{margin-left:auto;display:flex;gap:12px;align-items:center}
@@ -399,7 +404,43 @@ footer .links a{color:var(--ochre)}
 
   <div class="cert reveal">
     <div class="cert-top">
-      <div class="seal star" style="background:var(--lapis)">I</div>
+      <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
+      <div><h3>Data Science va Sunʼiy Intellekt</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-329438fc</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-data-science-ai.pdf" title="Data Science va Sunʼiy Intellekt certificate"></iframe></details>
+        <a class="dl" href="certs/mohirdev-data-science-ai.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="m1_d"></p>
+    <div class="stack"><span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Fast.ai</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span></div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
+      <div><h3>Computer Vision</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-a4d62c12</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-computer-vision.pdf" title="Computer Vision certificate"></iframe></details>
+        <a class="dl" href="certs/mohirdev-computer-vision.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="m2_d"></p>
+    <div class="stack"><span>OpenCV</span><span>PyTorch</span><span>Pillow</span><span>NumPy</span><span>Matplotlib</span></div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
+      <div><h3>Sunʼiy intellekt — NLP</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-34789a21</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-nlp.pdf" title="Sunʼiy intellekt — NLP certificate"></iframe></details>
+        <a class="dl" href="certs/mohirdev-nlp.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="m3_d"></p>
+    <div class="stack"><span>PyTorch</span><span>TensorFlow</span><span>Pandas</span><span>NumPy</span><span>Colab</span><span>VS Code</span></div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="issuer coursera"><img src="logos/coursera.png" alt="Coursera"></div>
       <div><h3>IoT (Internet of Things) Wireless &amp; Cloud Computing Emerging Technologies</h3><div class="meta">Coursera · Yonsei University · <span data-i18n="c1_date"></span></div></div>
       <div class="cert-actions">
         <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-iot-yonsei.pdf" title="IoT Wireless &amp; Cloud Computing certificate"></iframe></details>
@@ -411,7 +452,7 @@ footer .links a{color:var(--ochre)}
   </div>
   <div class="cert reveal">
     <div class="cert-top">
-      <div class="seal star" style="background:var(--turq-deep)">II</div>
+      <div class="issuer coursera"><img src="logos/coursera.png" alt="Coursera"></div>
       <div><h3>Programming for Data Science</h3><div class="meta">Coursera · University of Leeds · <span data-i18n="c2_date"></span></div></div>
       <div class="cert-actions">
         <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-data-science-leeds.pdf" title="Programming for Data Science certificate"></iframe></details>
@@ -503,6 +544,20 @@ const T = {
   l_mat:["Materials →","Materiallar →","Материалы →"],
 
   c_lead:["Professional development courses and international certificates.","Malaka oshirish kurslari va xalqaro sertifikatlar.","Курсы повышения квалификации и международные сертификаты."],
+  practicum:["Practicum","Praktikum","Практикум"],
+  jul2026:["July 2026","2026-yil iyul","Июль 2026"],
+  m1_d:[
+    "Hands-on practicum covering the full data science and machine learning workflow: data cleaning and analysis with Pandas and NumPy, visualisation with Matplotlib and Seaborn, classical ML with scikit-learn, and building neural networks with TensorFlow/Keras, PyTorch and fast.ai.",
+    "Data science va mashinali oʻqitishning toʻliq jarayonini qamrab olgan amaliy praktikum: Pandas va NumPy bilan maʼlumotlarni tozalash va tahlil qilish, Matplotlib va Seaborn bilan vizualizatsiya, scikit-learn bilan klassik ML hamda TensorFlow/Keras, PyTorch va fast.ai yordamida neyron tarmoqlar qurish.",
+    "Практикум, охватывающий полный цикл Data Science и машинного обучения: очистка и анализ данных в Pandas и NumPy, визуализация в Matplotlib и Seaborn, классическое ML в scikit-learn и построение нейронных сетей на TensorFlow/Keras, PyTorch и fast.ai."],
+  m2_d:[
+    "Hands-on computer vision practicum: image processing with OpenCV and Pillow, and deep learning models in PyTorch for tasks such as image classification, object and face detection.",
+    "Kompyuter koʻrish boʻyicha amaliy praktikum: OpenCV va Pillow bilan tasvirlarni qayta ishlash hamda tasvirlarni klassifikatsiyalash, obyekt va yuzlarni aniqlash kabi vazifalar uchun PyTorch'da chuqur oʻqitish modellari.",
+    "Практикум по компьютерному зрению: обработка изображений в OpenCV и Pillow, модели глубокого обучения на PyTorch для классификации изображений, детекции объектов и лиц."],
+  m3_d:[
+    "Hands-on NLP and speech practicum: text processing and language models with PyTorch and TensorFlow, building chatbots and voice assistants, including speech recognition and text-to-speech.",
+    "NLP va nutq bilan ishlash boʻyicha amaliy praktikum: PyTorch va TensorFlow yordamida matnni qayta ishlash va til modellari, chatbotlar va ovozli yordamchilar yaratish, jumladan nutqni tanish va text-to-speech.",
+    "Практикум по NLP и работе с речью: обработка текста и языковые модели на PyTorch и TensorFlow, создание чат-ботов и голосовых ассистентов, включая распознавание и синтез речи."],
   c1_date:["January 2026","2026-yil yanvar","Январь 2026"],
   c1_d:[
     "Course by Prof. Jong-Moon Chung (Yonsei University) on the technologies behind the Internet of Things: IoT system architecture, wireless networks (Wi-Fi, Bluetooth, 4G/5G) and cloud computing, and how they come together in modern smart devices and services.",
