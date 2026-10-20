@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarvarbek — CV</title>
+<title>Sarvarbek Polvonov — CV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -174,6 +174,9 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .issuer.coursera{background:#fff;border:1px solid #D5DEF5}
 .issuer.mohirdev{background:#00969C}
 .issuer.mohirdev img{max-height:20px}
+.issuer.rtsi,.issuer.koica{background:#fff;border:1px solid #D5DEF5}
+.issuer.rtsi img{max-height:36px}
+.cert details img{width:100%;max-width:460px;display:block;margin:14px auto 0;border:1px solid #CDBF9F}
 .cert .stack{margin-top:12px}
 .cert h3{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--lapis)}
 .cert .meta{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft)}
@@ -215,7 +218,7 @@ footer .links a{color:var(--ochre)}
 <body>
 
 <nav>
-  <a href="#/" class="brand"><i class="star"></i>Sarvarbek</a>
+  <a href="#/" class="brand"><i class="star"></i>Sarvarbek Polvonov</a>
   <div class="nav-right">
     <div class="nav-links">
       <a href="#/" data-route="home" data-i18n="nav_home"></a>
@@ -236,11 +239,11 @@ footer .links a{color:var(--ochre)}
   <div class="hero panel">
     <div class="photo-wrap">
       <div class="stars"><div class="s1 star"></div><div class="s2 star"></div><div class="s3 star"></div></div>
-      <div class="photo" id="profilePhoto">SB</div>
+      <div class="photo" id="profilePhoto">SP</div>
     </div>
     <div>
       <div class="eyebrow" data-i18n="eyebrow"></div>
-      <h1>Sarvarbek</h1>
+      <h1>Sarvarbek Polvonov</h1>
       <div class="role" data-i18n="role"></div>
       <p class="lead" data-i18n="lead"></p>
 
@@ -257,7 +260,7 @@ footer .links a{color:var(--ochre)}
           <span class="lbl">Telegram</span>
         </a>
         <!-- ◆ LinkedIn manzilingizni yozing -->
-        <a class="cbtn" href="https://linkedin.com/in/username" target="_blank" rel="noopener" title="LinkedIn">
+        <a class="cbtn" href="https://www.linkedin.com/in/sarvarbek-polvonov-367025259/" target="_blank" rel="noopener" title="LinkedIn">
           <span class="circ"><svg viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
           <span class="lbl">LinkedIn</span>
         </a>
@@ -404,6 +407,18 @@ footer .links a{color:var(--ochre)}
 
   <div class="cert reveal">
     <div class="cert-top">
+      <div class="issuer rtsi"><img src="logos/rtsi.png" alt="Digital Technologies and AI Development Research Institute"></div>
+      <div><h3 data-i18n="rt_t"></h3><div class="meta"><span data-i18n="rt_org"></span> · <span data-i18n="rt_date"></span> · № MT-000139</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view_img"></summary><img src="certs/rtsi-ai-nlp.png" alt="Certificate MT-000139"></details>
+        <a class="dl" href="certs/rtsi-ai-nlp.png" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="rt_d"></p>
+    <div class="stack"><span data-i18n="rt_h1"></span><span data-i18n="rt_h2"></span><span data-i18n="rt_h3"></span></div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
       <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
       <div><h3>Data Science va Sunʼiy Intellekt</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-329438fc</div></div>
       <div class="cert-actions">
@@ -452,6 +467,17 @@ footer .links a{color:var(--ochre)}
   </div>
   <div class="cert reveal">
     <div class="cert-top">
+      <div class="issuer koica"><img src="logos/koica.png" alt="KOICA"></div>
+      <div><h3>KOICA–TIU–Cheju Halla AI Training Center</h3><div class="meta">KOICA · Tashkent International University · Cheju Halla University · <span data-i18n="k_date"></span></div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/koica-tiu-cheju-halla-ai.pdf" title="KOICA AI Training Center certificate"></iframe></details>
+        <a class="dl" href="certs/koica-tiu-cheju-halla-ai.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="k_d"></p>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
       <div class="issuer coursera"><img src="logos/coursera.png" alt="Coursera"></div>
       <div><h3>Programming for Data Science</h3><div class="meta">Coursera · University of Leeds · <span data-i18n="c2_date"></span></div></div>
       <div class="cert-actions">
@@ -466,11 +492,11 @@ footer .links a{color:var(--ochre)}
 
 <footer>
   <div class="in">
-    <div>© 2026 Sarvarbek · <span data-i18n="city"></span></div>
+    <div>© 2026 Sarvarbek Polvonov · <span data-i18n="city"></span></div>
     <div class="links">
       <a href="mailto:beksarvar890@gmail.com">Email</a>
       <a href="https://t.me/g_learner" target="_blank" rel="noopener">Telegram</a>
-      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/sarvarbek-polvonov-367025259/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/sarvarbek-zafar" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
@@ -544,6 +570,22 @@ const T = {
   l_mat:["Materials →","Materiallar →","Материалы →"],
 
   c_lead:["Professional development courses and international certificates.","Malaka oshirish kurslari va xalqaro sertifikatlar.","Курсы повышения квалификации и международные сертификаты."],
+  rt_t:["AI professional development: Applied AI and Natural Language Processing","Sunʼiy intellekt sohasida malaka oshirish: SI asoslari va tabiiy tilni qayta ishlash","Повышение квалификации в сфере ИИ: основы применения ИИ и обработка естественного языка"],
+  rt_org:["Digital Technologies and AI Development Research Institute","Raqamli texnologiyalar va SI rivojlantirish ilmiy-tadqiqot instituti","НИИ развития цифровых технологий и ИИ"],
+  rt_date:["Jun–Jul 2026","2026-yil iyun–iyul","Июнь–июль 2026"],
+  rt_d:[
+    "State professional development programme in artificial intelligence at the research institute under the Ministry of Digital Technologies of the Republic of Uzbekistan (1 June – 15 July 2026, 226 academic hours): “Fundamentals of applying artificial intelligence” (62 h) and “Natural Language Processing” (164 h).",
+    "Oʻzbekiston Respublikasi Raqamli texnologiyalar vazirligi huzuridagi ilmiy-tadqiqot institutida sunʼiy intellekt sohasida malaka oshirish (2026-yil 1-iyun – 15-iyul, jami 226 akademik soat): “Sunʼiy intellektni qoʻllash asoslari” (62 soat) va “Tabiiy tilni qayta ishlash” (164 soat) kurslari.",
+    "Государственная программа повышения квалификации в сфере искусственного интеллекта в НИИ при Министерстве цифровых технологий Республики Узбекистан (1 июня – 15 июля 2026, 226 академических часов): «Основы применения искусственного интеллекта» (62 ч) и «Обработка естественного языка» (164 ч)."],
+  rt_h1:["226 academic hours","226 akademik soat","226 академических часов"],
+  rt_h2:["Applied AI · 62 h","SI asoslari · 62 soat","Основы ИИ · 62 ч"],
+  rt_h3:["NLP · 164 h","NLP · 164 soat","NLP · 164 ч"],
+  k_date:["December 2025","2025-yil dekabr","Декабрь 2025"],
+  k_d:[
+    "Artificial intelligence training programme of the AI Training Center established by the Korea International Cooperation Agency (KOICA) together with Tashkent International University and Cheju Halla University (Republic of Korea).",
+    "Koreya xalqaro hamkorlik agentligi (KOICA), Tashkent International University va Cheju Halla universiteti (Koreya Respublikasi) hamkorligida tashkil etilgan AI Training Center'ning sunʼiy intellekt boʻyicha oʻquv dasturi.",
+    "Учебная программа по искусственному интеллекту AI Training Center, созданного Корейским агентством международного сотрудничества (KOICA) совместно с Tashkent International University и Университетом Чеджу Халла (Республика Корея)."],
+  c_view_img:["View","Koʻrish","Смотреть"],
   practicum:["Practicum","Praktikum","Практикум"],
   jul2026:["July 2026","2026-yil iyul","Июль 2026"],
   m1_d:[
