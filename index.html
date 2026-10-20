@@ -177,7 +177,9 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .cert-actions summary::-webkit-details-marker{display:none}
 .cert-actions .dl{font-family:var(--mono);font-size:.74rem;color:var(--malachite)}
 .cert iframe{width:100%;height:420px;border:1px solid #CDBF9F;margin-top:14px;background:#fff}
-.cert-note{font-size:.8rem;color:#CCD5F3;font-style:italic}
+.cert .desc{font-size:.9rem;color:var(--ink-soft);margin-top:12px}
+.cert .verify{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:.74rem;color:var(--lapis-600)}
+.cert .verify:hover{text-decoration:underline}
 
 /* ═══ FUTER ═══ */
 footer{border-top:4px double var(--ochre);background:rgba(11,21,80,.94)}
@@ -398,34 +400,27 @@ footer .links a{color:var(--ochre)}
   <div class="cert reveal">
     <div class="cert-top">
       <div class="seal star" style="background:var(--lapis)">I</div>
-      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2025</div></div>
+      <div><h3>IoT (Internet of Things) Wireless &amp; Cloud Computing Emerging Technologies</h3><div class="meta">Coursera · Yonsei University · <span data-i18n="c1_date"></span></div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert1.pdf" title="Certificate 1"></iframe></details>
-        <a class="dl" href="certs/sert1.pdf" download data-i18n="c_dl"></a>
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-iot-yonsei.pdf" title="IoT Wireless &amp; Cloud Computing certificate"></iframe></details>
+        <a class="dl" href="certs/coursera-iot-yonsei.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
+    <p class="desc" data-i18n="c1_d"></p>
+    <a class="verify" href="https://coursera.org/verify/KAN429D5QD91" target="_blank" rel="noopener" data-i18n="c_verify"></a>
   </div>
   <div class="cert reveal">
     <div class="cert-top">
       <div class="seal star" style="background:var(--turq-deep)">II</div>
-      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2024</div></div>
+      <div><h3>Programming for Data Science</h3><div class="meta">Coursera · University of Leeds · <span data-i18n="c2_date"></span></div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert2.pdf" title="Certificate 2"></iframe></details>
-        <a class="dl" href="certs/sert2.pdf" download data-i18n="c_dl"></a>
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-data-science-leeds.pdf" title="Programming for Data Science certificate"></iframe></details>
+        <a class="dl" href="certs/coursera-data-science-leeds.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
+    <p class="desc" data-i18n="c2_d"></p>
+    <a class="verify" href="https://coursera.org/verify/L88I5PV75UM5" target="_blank" rel="noopener" data-i18n="c_verify"></a>
   </div>
-  <div class="cert reveal">
-    <div class="cert-top">
-      <div class="seal star" style="background:var(--malachite)">III</div>
-      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2024</div></div>
-      <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert3.pdf" title="Certificate 3"></iframe></details>
-        <a class="dl" href="certs/sert3.pdf" download data-i18n="c_dl"></a>
-      </div>
-    </div>
-  </div>
-  <p class="cert-note" data-i18n="c_note"></p>
 </section>
 
 <footer>
@@ -508,11 +503,19 @@ const T = {
   l_mat:["Materials →","Materiallar →","Материалы →"],
 
   c_lead:["Professional development courses and international certificates.","Malaka oshirish kurslari va xalqaro sertifikatlar.","Курсы повышения квалификации и международные сертификаты."],
-  c_name:["Certificate name","Sertifikat nomi","Название сертификата"],
-  c_org:["Issuing organization","Beruvchi tashkilot","Организация"],
+  c1_date:["January 2026","2026-yil yanvar","Январь 2026"],
+  c1_d:[
+    "Course by Prof. Jong-Moon Chung (Yonsei University) on the technologies behind the Internet of Things: IoT system architecture, wireless networks (Wi-Fi, Bluetooth, 4G/5G) and cloud computing, and how they come together in modern smart devices and services.",
+    "Yonsei universiteti professori Jong-Moon Chung kursi: Internet of Things texnologiyalari — IoT tizimlari arxitekturasi, simsiz tarmoqlar (Wi-Fi, Bluetooth, 4G/5G) va bulutli hisoblash hamda ularning zamonaviy aqlli qurilma va xizmatlarda birgalikda ishlashi.",
+    "Курс профессора Чон Мун Чуна (Университет Ёнсе) о технологиях Интернета вещей: архитектура IoT-систем, беспроводные сети (Wi-Fi, Bluetooth, 4G/5G) и облачные вычисления, а также их совместная работа в современных умных устройствах и сервисах."],
+  c2_date:["April 2025","2025-yil aprel","Апрель 2025"],
+  c2_d:[
+    "University of Leeds course on programming for data science in Python: core programming concepts, working with data, analysis and visualisation, and writing clean, reproducible code for data projects.",
+    "Leeds universiteti kursi: Python'da data science uchun dasturlash — dasturlashning asosiy tushunchalari, maʼlumotlar bilan ishlash, tahlil va vizualizatsiya hamda maʼlumotlar loyihalari uchun toza va qayta ishlatiladigan kod yozish.",
+    "Курс Университета Лидса по программированию для Data Science на Python: основы программирования, работа с данными, анализ и визуализация, написание чистого воспроизводимого кода для проектов с данными."],
   c_view:["View PDF","PDF koʻrish","Смотреть PDF"],
   c_dl:["Download ↓","Yuklab olish ↓","Скачать ↓"],
-  c_note:["Note: PDF files go in a “certs” folder next to index.html (e.g. certs/sert1.pdf).","Eslatma: PDF fayllar index.html bilan bir joyda “certs” papkasida boʻlishi kerak (masalan certs/sert1.pdf).","Примечание: PDF-файлы должны лежать в папке «certs» рядом с index.html (например certs/sert1.pdf)."],
+  c_verify:["Verify on Coursera →","Coursera'da tekshirish →","Проверить на Coursera →"],
   city:["Tashkent","Toshkent","Ташкент"]
 };
 
