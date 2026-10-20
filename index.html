@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarvarbek — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ═══ RANGLAR — Samarqand koshinlari (lojuvard, feruza, yashil, oltin, oq chok) ═══ */
+:root{
+  --lapis-900:#0B1550;
+  --lapis:#1C2F96;
+  --lapis-600:#2A44C0;
+  --turq:#2FA8C4;
+  --turq-deep:#157F97;
+  --turq-light:#8FD9E6;
+  --malachite:#1E7A55;
+  --ochre:#C99A3E;
+  --ochre-deep:#8F6418;
+  --ivory:#F6EFE1;
+  --ivory-2:#EADFC8;
+  --grout:#F7F1E6;
+  --ink:#141B3D;
+  --ink-soft:#4B5068;
+  --display:"Cormorant Garamond", Georgia, serif;
+  --sans:"Inter", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+  --star:polygon(50% 0%,64.65% 14.64%,85.36% 14.64%,85.36% 35.35%,100% 50%,85.36% 64.65%,85.36% 85.36%,64.65% 85.36%,50% 100%,35.35% 85.36%,14.64% 85.36%,14.64% 64.65%,0% 50%,14.64% 35.35%,14.64% 14.64%,35.35% 14.64%);
+  --frame:0 0 0 3px var(--grout),0 0 0 9px var(--lapis),0 0 0 11px var(--ochre),0 24px 60px rgba(3,8,40,.45);
+  --frame-sm:0 0 0 2px var(--grout),0 0 0 6px var(--lapis),0 14px 34px rgba(3,8,40,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);color:var(--ink);line-height:1.65;min-height:100vh;overflow-x:hidden;
+  background-color:var(--lapis-900);
+  background-image:linear-gradient(rgba(11,21,80,.58),rgba(11,21,80,.58)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%231A2B8E'/%3E%3Cpath d='M0 22L22 0M98 0L120 22M120 98L98 120M22 120L0 98' stroke='%230E1650' stroke-width='10'/%3E%3Cpolygon points='0,-13 13,0 0,13 -13,0' fill='%232FA8C4'/%3E%3Cpolygon points='120,-13 133,0 120,13 107,0' fill='%232FA8C4'/%3E%3Cpolygon points='0,107 13,120 0,133 -13,120' fill='%232FA8C4'/%3E%3Cpolygon points='120,107 133,120 120,133 107,120' fill='%232FA8C4'/%3E%3Cpolygon points='60,-7 67,0 60,7 53,0' fill='%23C99A3E'/%3E%3Cpolygon points='120,53 127,60 120,67 113,60' fill='%23C99A3E'/%3E%3Cpolygon points='60,113 67,120 60,127 53,120' fill='%23C99A3E'/%3E%3Cpolygon points='0,53 7,60 0,67 -7,60' fill='%23C99A3E'/%3E%3Cpolygon points='60.0,20.0 71.7,31.7 88.3,31.7 88.3,48.3 100.0,60.0 88.3,71.7 88.3,88.3 71.7,88.3 60.0,100.0 48.3,88.3 31.7,88.3 31.7,71.7 20.0,60.0 31.7,48.3 31.7,31.7 48.3,31.7' fill='%2322389F'/%3E%3Cpolygon points='60.0,44.0 64.7,48.7 71.3,48.7 71.3,55.3 76.0,60.0 71.3,64.7 71.3,71.3 64.7,71.3 60.0,76.0 55.3,71.3 48.7,71.3 48.7,64.7 44.0,60.0 48.7,55.3 48.7,48.7 55.3,48.7' fill='%231E7A55'/%3E%3Ccircle cx='60' cy='60' r='4' fill='%23C99A3E'/%3E%3Cg fill='none' stroke='%23F2EBDD' stroke-width='2.4' stroke-linejoin='round'%3E%3Cpolygon points='60.0,20.0 71.7,31.7 88.3,31.7 88.3,48.3 100.0,60.0 88.3,71.7 88.3,88.3 71.7,88.3 60.0,100.0 48.3,88.3 31.7,88.3 31.7,71.7 20.0,60.0 31.7,48.3 31.7,31.7 48.3,31.7'/%3E%3Cpolygon points='60.0,44.0 64.7,48.7 71.3,48.7 71.3,55.3 76.0,60.0 71.3,64.7 71.3,71.3 64.7,71.3 60.0,76.0 55.3,71.3 48.7,71.3 48.7,64.7 44.0,60.0 48.7,55.3 48.7,48.7 55.3,48.7'/%3E%3Cpath d='M60 20V0M100 60H120M60 100V120M20 60H0M88.3 31.7L120 0M88.3 88.3L120 120M31.7 88.3L0 120M31.7 31.7L0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:auto,120px 120px;background-attachment:fixed;
+}
+a{color:var(--lapis-600);text-decoration:none}
+.star{clip-path:var(--star)}
+
+/* ═══ NAV ═══ */
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(11,21,80,.94);backdrop-filter:blur(8px);
+  border-bottom:4px double var(--ochre);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 28px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.55rem;color:var(--ivory);letter-spacing:.02em}
+.brand i{width:20px;height:20px;background:var(--ochre)}
+.nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.nav-links{display:flex;gap:2px;flex-wrap:wrap}
+.nav-links a{font-family:var(--mono);font-size:.76rem;color:rgba(246,239,225,.82);padding:7px 12px;border-radius:3px}
+.nav-links a:hover{color:var(--ivory);background:rgba(246,239,225,.08)}
+.nav-links a.active{background:var(--ivory);color:var(--lapis-900)}
+.lang{display:flex;border:1px solid var(--ochre);border-radius:3px;overflow:hidden}
+.lang button{font-family:var(--mono);font-size:.72rem;font-weight:500;border:0;background:transparent;color:var(--ivory);padding:6px 11px;cursor:pointer}
+.lang button+button{border-left:1px solid rgba(201,154,62,.5)}
+.lang button.active{background:var(--ochre);color:var(--lapis-900)}
+
+/* ═══ SAHIFA ═══ */
+.page{display:none;max-width:1000px;margin:0 auto;padding:52px 24px 90px}
+.page.visible{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel{background:var(--ivory);border-radius:4px;box-shadow:var(--frame)}
+
+/* ═══ HERO ═══ */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;padding:40px 44px;margin:11px}
+.photo-wrap{position:relative;width:230px;height:230px;flex-shrink:0}
+.stars{position:absolute;inset:0;animation:spin 60s linear infinite}
+.stars .s1{position:absolute;inset:0;background:var(--lapis)}
+.stars .s2{position:absolute;inset:6px;background:conic-gradient(var(--turq),var(--lapis-600),var(--malachite),var(--ochre),var(--turq),var(--lapis-600),var(--malachite),var(--ochre),var(--turq))}
+.stars .s3{position:absolute;inset:14px;background:var(--grout)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo{
+  position:absolute;inset:38px;border-radius:50%;border:4px solid var(--grout);box-shadow:0 0 0 2px var(--ochre);
+  background:var(--lapis) url('profile.jpg') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-weight:700;font-size:2.8rem;color:var(--ivory);
+}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--malachite)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);line-height:1;color:var(--lapis);margin:8px 0 6px}
+.role{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.35rem;color:var(--ochre-deep);margin-bottom:12px}
+.lead{max-width:580px;color:var(--ink-soft)}
+
+/* ═══ ALOQA TUGMALARI ═══ */
+.contact-row{display:flex;gap:16px;margin-top:22px;flex-wrap:wrap}
+.cbtn{display:flex;flex-direction:column;align-items:center;gap:6px;width:66px}
+.cbtn .circ{
+  width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;
+  border:2px solid var(--lapis);box-shadow:0 0 0 3px var(--ivory),0 0 0 4px var(--ochre);
+  transition:transform .18s ease;
+}
+.cbtn .circ svg{width:24px;height:24px}
+.cbtn .circ img{width:26px;height:26px;object-fit:contain}
+.cbtn:hover .circ{transform:translateY(-4px)}
+.cbtn .lbl{font-family:var(--mono);font-size:.64rem;color:var(--ink-soft)}
+
+/* ═══ SKILL TUGMALARI + DROPDOWN ═══ */
+.skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.skill{position:relative}
+.tag{
+  font-family:var(--mono);font-size:.74rem;font-weight:500;color:var(--ivory);
+  background:var(--lapis);border:1px solid var(--lapis);border-radius:3px;padding:7px 11px 7px 12px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:background .15s;
+}
+.tag:hover{background:var(--lapis-600)}
+.tag .car{font-size:.55rem;opacity:.8;transition:transform .2s}
+.skill.open .tag{background:var(--turq-deep);border-color:var(--turq-deep)}
+.skill.open .car{transform:rotate(180deg)}
+.dd{
+  display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:40;min-width:210px;list-style:none;
+  background:var(--ivory);border:2px solid var(--lapis);border-top:4px solid var(--ochre);border-radius:3px;
+  box-shadow:0 16px 34px rgba(5,10,40,.35);padding:8px 6px;
+}
+.dd.right{left:auto;right:0}
+.skill.open .dd{display:block}
+.dd li{text-align:left;position:relative;font-size:.84rem;color:var(--ink);padding:5px 10px 5px 26px;border-radius:2px;white-space:nowrap}
+.dd li::before{content:"";position:absolute;left:11px;top:50%;width:7px;height:7px;background:var(--turq);transform:translateY(-50%) rotate(45deg)}
+.dd li:nth-child(3n+2)::before{background:var(--malachite)}
+.dd li:nth-child(3n)::before{background:var(--ochre)}
+.dd li:hover{background:var(--ivory-2)}
+
+/* ═══ YO'NALISH KARTALARI ═══ */
+.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin:52px 6px 0}
+.route{display:block;position:relative;background:var(--ivory);border-radius:3px;box-shadow:var(--frame-sm);padding:30px 24px 24px;color:var(--ink);overflow:hidden;transition:transform .18s}
+.route::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%231A2B8E'/%3E%3Cpath d='M0 22L22 0M98 0L120 22M120 98L98 120M22 120L0 98' stroke='%230E1650' stroke-width='10'/%3E%3Cpolygon points='0,-13 13,0 0,13 -13,0' fill='%232FA8C4'/%3E%3Cpolygon points='120,-13 133,0 120,13 107,0' fill='%232FA8C4'/%3E%3Cpolygon points='0,107 13,120 0,133 -13,120' fill='%232FA8C4'/%3E%3Cpolygon points='120,107 133,120 120,133 107,120' fill='%232FA8C4'/%3E%3Cpolygon points='60,-7 67,0 60,7 53,0' fill='%23C99A3E'/%3E%3Cpolygon points='120,53 127,60 120,67 113,60' fill='%23C99A3E'/%3E%3Cpolygon points='60,113 67,120 60,127 53,120' fill='%23C99A3E'/%3E%3Cpolygon points='0,53 7,60 0,67 -7,60' fill='%23C99A3E'/%3E%3Cpolygon points='60.0,20.0 71.7,31.7 88.3,31.7 88.3,48.3 100.0,60.0 88.3,71.7 88.3,88.3 71.7,88.3 60.0,100.0 48.3,88.3 31.7,88.3 31.7,71.7 20.0,60.0 31.7,48.3 31.7,31.7 48.3,31.7' fill='%2322389F'/%3E%3Cpolygon points='60.0,44.0 64.7,48.7 71.3,48.7 71.3,55.3 76.0,60.0 71.3,64.7 71.3,71.3 64.7,71.3 60.0,76.0 55.3,71.3 48.7,71.3 48.7,64.7 44.0,60.0 48.7,55.3 48.7,48.7 55.3,48.7' fill='%231E7A55'/%3E%3Ccircle cx='60' cy='60' r='4' fill='%23C99A3E'/%3E%3Cg fill='none' stroke='%23F2EBDD' stroke-width='2.4' stroke-linejoin='round'%3E%3Cpolygon points='60.0,20.0 71.7,31.7 88.3,31.7 88.3,48.3 100.0,60.0 88.3,71.7 88.3,88.3 71.7,88.3 60.0,100.0 48.3,88.3 31.7,88.3 31.7,71.7 20.0,60.0 31.7,48.3 31.7,31.7 48.3,31.7'/%3E%3Cpolygon points='60.0,44.0 64.7,48.7 71.3,48.7 71.3,55.3 76.0,60.0 71.3,64.7 71.3,71.3 64.7,71.3 60.0,76.0 55.3,71.3 48.7,71.3 48.7,64.7 44.0,60.0 48.7,55.3 48.7,48.7 55.3,48.7'/%3E%3Cpath d='M60 20V0M100 60H120M60 100V120M20 60H0M88.3 31.7L120 0M88.3 88.3L120 120M31.7 88.3L0 120M31.7 31.7L0 0'/%3E%3C/g%3E%3C/svg%3E") 0 0/36px 36px}
+.route:hover{transform:translateY(-5px)}
+.route .idx{font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--ochre)}
+.route h3{font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--lapis);margin:2px 0 6px}
+.route p{font-size:.9rem;color:var(--ink-soft)}
+.route .arrow{position:absolute;right:22px;top:34px;color:var(--lapis);transition:transform .18s}
+.route:hover .arrow{transform:translateX(4px)}
+
+/* ═══ ICHKI SAHIFA SARLAVHASI ═══ */
+.back{font-family:var(--mono);font-size:.8rem;color:var(--turq-light)}
+.back:hover{color:var(--ivory)}
+.page-head{margin:16px 0 34px;padding:22px 26px;background:rgba(11,21,80,.88);border-left:4px solid var(--ochre);border-radius:3px}
+.page-head h2{font-family:var(--display);font-weight:700;font-size:clamp(2.2rem,5vw,3rem);color:var(--ivory);line-height:1.1}
+.orn{display:flex;align-items:center;gap:10px;margin:12px 0 14px}
+.orn::before,.orn::after{content:"";height:2px;width:60px;background:var(--ochre)}
+.orn i{width:14px;height:14px;background:var(--turq)}
+.page-head p{color:#CCD5F3;max-width:640px}
+
+/* ═══ TAJRIBA ═══ */
+.xp-list{padding:10px 34px;margin:11px}
+.xp{display:flex;gap:20px;padding:24px 0;border-bottom:1px dashed #CDBF9F}
+.xp:last-child{border-bottom:0}
+.xp-dot{width:18px;height:18px;margin-top:6px;flex-shrink:0}
+.xp-date{font-family:var(--mono);font-size:.74rem;color:var(--ink-soft);min-width:104px;padding-top:6px;flex-shrink:0}
+.xp h3{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.25;color:var(--lapis)}
+.xp .org{font-weight:600;font-size:.88rem;color:var(--malachite);margin:2px 0 8px}
+.xp ul{margin-left:18px;color:var(--ink-soft);font-size:.92rem}
+.xp li{margin-bottom:4px}
+.xp li::marker{color:var(--ochre)}
+
+/* ═══ LOYIHALAR ═══ */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin:6px}
+.proj{background:var(--ivory);border-radius:3px;box-shadow:var(--frame-sm);padding:22px;display:flex;flex-direction:column;border-top:6px solid var(--turq)}
+.proj .kind{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ochre-deep)}
+.proj h3{font-family:var(--display);font-weight:700;font-size:1.45rem;line-height:1.2;color:var(--lapis);margin:4px 0 8px}
+.proj p{font-size:.9rem;color:var(--ink-soft);flex:1}
+.stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.stack span{font-family:var(--mono);font-size:.66rem;background:#E3E8F7;color:var(--lapis);border-radius:2px;padding:3px 8px}
+.plink{margin-top:14px;font-family:var(--mono);font-size:.76rem}
+
+/* ═══ SERTIFIKATLAR ═══ */
+.cert{background:var(--ivory);border-radius:3px;box-shadow:var(--frame-sm);padding:18px 22px;margin:6px 6px 26px}
+.cert-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.seal{width:48px;height:48px;flex-shrink:0;display:grid;place-items:center;color:var(--ivory);font-family:var(--display);font-weight:700}
+.cert h3{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--lapis)}
+.cert .meta{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft)}
+.cert-actions{margin-left:auto;display:flex;gap:12px;align-items:center}
+.cert-actions summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:.74rem;color:var(--lapis);padding:6px 12px;border:1px solid var(--lapis);border-radius:3px}
+.cert-actions summary::-webkit-details-marker{display:none}
+.cert-actions .dl{font-family:var(--mono);font-size:.74rem;color:var(--malachite)}
+.cert iframe{width:100%;height:420px;border:1px solid #CDBF9F;margin-top:14px;background:#fff}
+.cert-note{font-size:.8rem;color:#CCD5F3;font-style:italic}
+
+/* ═══ FUTER ═══ */
+footer{border-top:4px double var(--ochre);background:rgba(11,21,80,.94)}
+footer .in{max-width:1000px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:#CCD5F3;font-size:.85rem}
+footer .links{display:flex;gap:18px;font-family:var(--mono);font-size:.78rem;flex-wrap:wrap}
+footer .links a{color:var(--ochre)}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:760px){
+  nav{padding:10px 16px;position:relative}
+  .page{padding:32px 16px 70px}
+  .hero{grid-template-columns:1fr;justify-items:center;text-align:center;padding:30px 20px;gap:26px}
+  .photo-wrap{width:190px;height:190px}
+  .photo{inset:32px}
+  .lead{margin:0 auto}
+  .contact-row,.skills{justify-content:center}
+  .contact-row{gap:8px}
+  .cbtn{width:60px}
+  .xp-list{padding:6px 18px}
+  .xp{flex-direction:column;gap:6px}
+  .cert-actions{margin-left:0;width:100%;justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#/" class="brand"><i class="star"></i>Sarvarbek</a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#/" data-route="home" data-i18n="nav_home"></a>
+      <a href="#/tajriba" data-route="tajriba" data-i18n="nav_exp"></a>
+      <a href="#/loyihalar" data-route="loyihalar" data-i18n="nav_proj"></a>
+      <a href="#/sertifikatlar" data-route="sertifikatlar" data-i18n="nav_cert"></a>
+    </div>
+    <div class="lang">
+      <button data-setlang="en">EN</button>
+      <button data-setlang="uz">UZ</button>
+      <button data-setlang="ru">RU</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════ BOSH SAHIFA ════════════ -->
+<section class="page" id="page-home">
+  <div class="hero panel">
+    <div class="photo-wrap">
+      <div class="stars"><div class="s1 star"></div><div class="s2 star"></div><div class="s3 star"></div></div>
+      <div class="photo" id="profilePhoto">SB</div>
+    </div>
+    <div>
+      <div class="eyebrow" data-i18n="eyebrow"></div>
+      <h1>Sarvarbek</h1>
+      <div class="role" data-i18n="role"></div>
+      <p class="lead" data-i18n="lead"></p>
+
+      <!-- ◆ ALOQA TUGMALARI
+           Ichida rasmiy brend SVG ikonkasi bor. O'z rasmingizni qo'ymoqchi bo'lsangiz,
+           <svg>...</svg> ni o'chirib, o'rniga  <img src="icons/telegram.png" alt="">  yozing. -->
+      <div class="contact-row">
+        <a class="cbtn" href="mailto:beksarvar890@gmail.com" title="Email">
+          <span class="circ"><svg viewBox="0 0 24 24" fill="#EA4335" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span>
+          <span class="lbl">Email</span>
+        </a>
+        <a class="cbtn" href="https://t.me/g_learner" target="_blank" rel="noopener" title="Telegram">
+          <span class="circ"><svg viewBox="0 0 24 24" fill="#26A5E4" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span>
+          <span class="lbl">Telegram</span>
+        </a>
+        <!-- ◆ LinkedIn manzilingizni yozing -->
+        <a class="cbtn" href="https://linkedin.com/in/username" target="_blank" rel="noopener" title="LinkedIn">
+          <span class="circ"><svg viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+          <span class="lbl">LinkedIn</span>
+        </a>
+        <!-- ◆ GitHub manzilingizni yozing -->
+        <a class="cbtn" href="https://github.com/sarvarbek-zafar" target="_blank" rel="noopener" title="GitHub">
+          <span class="circ"><svg viewBox="0 0 24 24" fill="#181717" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
+          <span class="lbl">GitHub</span>
+        </a>
+      </div>
+
+      <!-- Skill tugmalari pastdagi SKILLS ro'yxatidan avtomatik chiziladi -->
+      <div class="skills" id="skills"></div>
+    </div>
+  </div>
+
+  <div class="routes">
+    <a class="route reveal" href="#/tajriba">
+      <span class="idx">I</span><span class="arrow">→</span>
+      <h3 data-i18n="nav_exp"></h3>
+      <p data-i18n="r1"></p>
+    </a>
+    <a class="route reveal" href="#/loyihalar">
+      <span class="idx">II</span><span class="arrow">→</span>
+      <h3 data-i18n="nav_proj"></h3>
+      <p data-i18n="r2"></p>
+    </a>
+    <a class="route reveal" href="#/sertifikatlar">
+      <span class="idx">III</span><span class="arrow">→</span>
+      <h3 data-i18n="nav_cert"></h3>
+      <p data-i18n="r3"></p>
+    </a>
+  </div>
+</section>
+
+<!-- ════════════ TAJRIBA ════════════ -->
+<section class="page" id="page-tajriba">
+  <a class="back" href="#/" data-i18n="back"></a>
+  <div class="page-head">
+    <h2 data-i18n="nav_exp"></h2>
+    <div class="orn"><i class="star"></i></div>
+    <p data-i18n="exp_lead"></p>
+  </div>
+
+  <div class="panel xp-list">
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--turq)"></span>
+      <div class="xp-date">2025 — <span data-i18n="now"></span></div>
+      <div>
+        <h3 data-i18n="x1_t"></h3>
+        <div class="org" data-i18n="x1_o"></div>
+        <ul><li data-i18n="x1_b1"></li><li data-i18n="x1_b2"></li><li data-i18n="x1_b3"></li></ul>
+      </div>
+    </div>
+
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--lapis)"></span>
+      <div class="xp-date">2026 — <span data-i18n="now"></span></div>
+      <div>
+        <h3 data-i18n="x2_t"></h3>
+        <div class="org" data-i18n="x2_o"></div>
+        <ul><li data-i18n="x2_b1"></li><li data-i18n="x2_b2"></li><li data-i18n="x2_b3"></li></ul>
+      </div>
+    </div>
+
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--ochre)"></span>
+      <div class="xp-date">2024 — <span data-i18n="now"></span></div>
+      <div>
+        <h3 data-i18n="x3_t"></h3>
+        <div class="org" data-i18n="x3_o"></div>
+        <ul><li data-i18n="x3_b1"></li><li data-i18n="x3_b2"></li><li data-i18n="x3_b3"></li></ul>
+      </div>
+    </div>
+
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--malachite)"></span>
+      <div class="xp-date">2022 — 2025</div>
+      <div>
+        <h3 data-i18n="x4_t"></h3>
+        <div class="org" data-i18n="x4_o"></div>
+        <!-- ◆ Bu yerdagi 2- va 3-band asl faylda ilmiy tadqiqot bloksidan nusxa edi — kerak bo'lsa almashtiring -->
+        <ul><li data-i18n="x4_b1"></li><li data-i18n="x2_b2"></li><li data-i18n="x2_b3"></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ LOYIHALAR ════════════ -->
+<section class="page" id="page-loyihalar">
+  <a class="back" href="#/" data-i18n="back"></a>
+  <div class="page-head">
+    <h2 data-i18n="nav_proj"></h2>
+    <div class="orn"><i class="star"></i></div>
+    <p data-i18n="p_lead"></p>
+  </div>
+
+  <div class="proj-grid">
+    <div class="proj reveal" style="border-top-color:var(--lapis)">
+      <span class="kind" data-i18n="p1_k"></span>
+      <h3 data-i18n="p1_t"></h3>
+      <p data-i18n="p1_d"></p>
+      <div class="stack"><span>LaTeX</span><span>Maple</span><span>Python</span></div>
+      <div class="plink"><a href="#" target="_blank" data-i18n="l_paper"></a></div>
+    </div>
+    <div class="proj reveal" style="border-top-color:var(--turq)">
+      <span class="kind" data-i18n="p2_k"></span>
+      <h3 data-i18n="p2_t"></h3>
+      <p data-i18n="p2_d"></p>
+      <div class="stack"><span>XLM-RoBERTa</span><span>NLP</span><span>Python</span></div>
+      <div class="plink"><a href="#" target="_blank" data-i18n="l_paper"></a></div>
+    </div>
+    <div class="proj reveal" style="border-top-color:var(--ochre)">
+      <span class="kind" data-i18n="p3_k"></span>
+      <h3 data-i18n="p3_t"></h3>
+      <p data-i18n="p3_d"></p>
+      <div class="stack"><span>Make.com</span><span>Vapi.ai</span><span>ElevenLabs</span><span>Telegram</span></div>
+      <div class="plink"><a href="#" target="_blank" data-i18n="l_demo"></a></div>
+    </div>
+    <div class="proj reveal" style="border-top-color:var(--malachite)">
+      <span class="kind" data-i18n="p4_k"></span>
+      <h3>DocumentAssistantAgent</h3>
+      <p data-i18n="p4_d"></p>
+      <div class="stack"><span>LangChain</span><span>FastAPI</span><span>Kaggle</span></div>
+      <div class="plink"><a href="#" target="_blank">GitHub →</a></div>
+    </div>
+    <div class="proj reveal" style="border-top-color:var(--turq)">
+      <span class="kind" data-i18n="p5_k"></span>
+      <h3 data-i18n="p5_t"></h3>
+      <p data-i18n="p5_d"></p>
+      <div class="stack"><span>HTML/JS</span><span data-i18n="pedagogy"></span></div>
+      <div class="plink"><a href="#" target="_blank" data-i18n="l_mat"></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ SERTIFIKATLAR ════════════ -->
+<section class="page" id="page-sertifikatlar">
+  <a class="back" href="#/" data-i18n="back"></a>
+  <div class="page-head">
+    <h2 data-i18n="nav_cert"></h2>
+    <div class="orn"><i class="star"></i></div>
+    <p data-i18n="c_lead"></p>
+  </div>
+
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="seal star" style="background:var(--lapis)">I</div>
+      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2025</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert1.pdf" title="Certificate 1"></iframe></details>
+        <a class="dl" href="certs/sert1.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="seal star" style="background:var(--turq-deep)">II</div>
+      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2024</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert2.pdf" title="Certificate 2"></iframe></details>
+        <a class="dl" href="certs/sert2.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
+      <div class="seal star" style="background:var(--malachite)">III</div>
+      <div><h3 data-i18n="c_name"></h3><div class="meta"><span data-i18n="c_org"></span> · 2024</div></div>
+      <div class="cert-actions">
+        <details><summary data-i18n="c_view"></summary><iframe src="certs/sert3.pdf" title="Certificate 3"></iframe></details>
+        <a class="dl" href="certs/sert3.pdf" download data-i18n="c_dl"></a>
+      </div>
+    </div>
+  </div>
+  <p class="cert-note" data-i18n="c_note"></p>
+</section>
+
+<footer>
+  <div class="in">
+    <div>© 2026 Sarvarbek · <span data-i18n="city"></span></div>
+    <div class="links">
+      <a href="mailto:beksarvar890@gmail.com">Email</a>
+      <a href="https://t.me/g_learner" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/sarvarbek-zafar" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   MATNLAR — har bir qator: [ "English", "Oʻzbekcha", "Русский" ]
+   Matnni o'zgartirsangiz, uchala tilni shu yerda yangilang.
+   ═══════════════════════════════════════════════════════════════ */
+const LANGS = ["en","uz","ru"];
+const T = {
+  nav_home:["Home","Bosh sahifa","Главная"],
+  nav_exp:["Experience","Ish tajribasi","Опыт работы"],
+  nav_proj:["Projects","Loyihalar","Проекты"],
+  nav_cert:["Certificates","Sertifikatlar","Сертификаты"],
+  back:["← Home","← Bosh sahifa","← Главная"],
+  eyebrow:["Curriculum Vitae · Tashkent","Curriculum Vitae · Toshkent","Резюме · Ташкент"],
+  role:["Researcher · Educator · AI Engineer","Tadqiqotchi · Oʻqituvchi · AI muhandisi","Исследователь · Преподаватель · AI-инженер"],
+  lead:[
+    "Mathematical researcher, AI (ML/DL) and Data Science educator, and applied AI systems engineer. I research numerical methods and quadrature formulas, teach Calculus, ML and Data Science to students, and build AI automation solutions for businesses.",
+    "Matematik tadqiqotchi, AI (ML/DL) va Data Science boʻyicha oʻqituvchi hamda amaliy AI tizimlari muhandisi. Sonli usullar va kvadratur formulalar boʻyicha ilmiy izlanishlar olib boraman, talabalarga Calculus, ML, DS fanlarini oʻqitaman hamda biznes uchun AI-avtomatlashtirish yechimlarini quraman.",
+    "Математик-исследователь, преподаватель AI (ML/DL) и Data Science, инженер прикладных AI-систем. Веду научные исследования по численным методам и квадратурным формулам, преподаю студентам Calculus, ML и Data Science, создаю решения по AI-автоматизации для бизнеса."],
+  r1:["My work across education, research and applied projects.","Taʼlim, ilmiy tadqiqot va amaliy loyihalardagi faoliyatim.","Моя деятельность в образовании, науке и прикладных проектах."],
+  r2:["Research papers, AI systems and teaching materials.","Ilmiy maqolalar, AI tizimlari va oʻquv materiallari.","Научные статьи, AI-системы и учебные материалы."],
+  r3:["Professional development courses and international certificates.","Malaka oshirish kurslari va xalqaro sertifikatlar.","Курсы повышения квалификации и международные сертификаты."],
+  now:["now","hozir","н. в."],
+
+  exp_lead:["Three tracks: academic research, higher education and applied AI engineering.","Uch yoʻnalish: ilmiy tadqiqot, oliy taʼlim va amaliy AI muhandisligi.","Три направления: научные исследования, высшее образование и прикладная AI-инженерия."],
+
+  x1_t:["Lecturer — Deep Learning, Data Analysis and AI courses","Oʻqituvchi — Deep Learning, Data Analysis va AI kurslari","Преподаватель — курсы Deep Learning, Data Analysis и AI"],
+  x1_o:["Tashkent International University","Tashkent International University","Ташкентский международный университет"],
+  x1_b1:["Lectures and labs in Uzbek on Machine Learning, Data Analysis, Calculus and Artificial Intelligence.","Talabalar uchun oʻzbek tilida Machine Learning, Data Analysis, Calculus va sunʼiy intellekt fanlaridan maʼruza va amaliyot darslari.","Лекции и практические занятия на узбекском языке по Machine Learning, Data Analysis, Calculus и искусственному интеллекту."],
+  x1_b2:["Developing syllabi, exam materials and interactive teaching widgets.","Oʻquv dasturlari, imtihon materiallari va interaktiv taʼlim vidjetlarini ishlab chiqish.","Разработка учебных программ, экзаменационных материалов и интерактивных обучающих виджетов."],
+  x1_b3:["Designing hands-on capstone assignments on Make.com and n8n agents; training and evaluating ML models.","Make.com va n8n asosidagi agentlar boʻyicha amaliy capstone topshiriqlarini loyihalash, ML modellarini oʻqitish va baholash.","Разработка практических capstone-заданий по агентам на Make.com и n8n, обучение и оценка ML-моделей."],
+
+  x2_t:["Researcher — Computational Mathematics","Ilmiy tadqiqotchi — hisoblash matematikasi","Научный сотрудник — вычислительная математика"],
+  x2_o:["V.I. Romanovskiy Institute of Mathematics","V.I. Romanovskiy nomidagi Matematika instituti","Институт математики имени В.И. Романовского"],
+  x2_b1:["Research on optimal quadrature formulas in Sobolev spaces; preparing journal papers.","Sobolev fazolarida optimal kvadratur formulalar boʻyicha tadqiqot va ilmiy maqolalar tayyorlash.","Исследование оптимальных квадратурных формул в пространствах Соболева, подготовка научных статей."],
+  x2_b2:["Numerical verification of results in Python and Maple; typesetting in LaTeX/Overleaf.","Natijalarni Python va Maple yordamida sonli tekshirish, LaTeX/Overleaf'da rasmiylashtirish.","Численная проверка результатов в Python и Maple, оформление в LaTeX/Overleaf."],
+  x2_b3:["Exploring links between approximate integration methods and NLP/ML theory.","Approksimatsion integrallash usullarini NLP va ML nazariyasi bilan bogʻlash boʻyicha izlanishlar.","Исследование связи методов приближённого интегрирования с теорией NLP и ML."],
+
+  x3_t:["AI Engineer — automation projects","AI muhandisi — avtomatlashtirish loyihalari","AI-инженер — проекты автоматизации"],
+  x3_o:["Independent projects / client work","Mustaqil loyihalar / buyurtmalar","Независимые проекты / заказы"],
+  x3_b1:["Automating business processes with AI: voice bots, Telegram integrations.","Biznes jarayonlarini AI yordamida avtomatlashtirish: ovozli botlar, Telegram integratsiyalari.","Автоматизация бизнес-процессов с помощью AI: голосовые боты, интеграции с Telegram."],
+  x3_b2:["Designing no-code/low-code workflows on Make.com and n8n.","Make.com va n8n platformalarida no-code/low-code oqimlarni loyihalash.","Проектирование no-code/low-code процессов на Make.com и n8n."],
+  x3_b3:["Deploying Uzbek-language voice synthesis and voice cloning solutions.","Oʻzbek tilidagi ovoz sintezi va klonlash yechimlarini amaliyotga joriy etish.","Внедрение решений синтеза и клонирования голоса на узбекском языке."],
+
+  x4_t:["Lecturer — Machine Learning, Databases, Big Data Engineering","Oʻqituvchi — Machine Learning, Database, Big Data muhandisligi","Преподаватель — Machine Learning, базы данных, инженерия Big Data"],
+  x4_o:["Bukhara State University","Buxoro davlat universiteti","Бухарский государственный университет"],
+  x4_b1:["Lectures and labs in Uzbek on Machine Learning, Data Analysis, Calculus and Artificial Intelligence.","Talabalar uchun oʻzbek tilida Machine Learning, Data Analysis, Calculus va sunʼiy intellekt fanlaridan maʼruza va amaliyot darslari.","Лекции и практические занятия на узбекском языке по Machine Learning, Data Analysis, Calculus и искусственному интеллекту."],
+
+  p_lead:["Research papers, applied AI systems and teaching resources.","Ilmiy ishlar, amaliy AI tizimlari va taʼlim resurslari.","Научные работы, прикладные AI-системы и учебные ресурсы."],
+  p1_k:["Research paper","Ilmiy maqola","Научная статья"],
+  p1_t:["Optimal quadrature formulas","Optimal kvadratur formulalar","Оптимальные квадратурные формулы"],
+  p1_d:["An optimal quadrature formula with derivatives in the Sobolev space W₂^(3,2): Sobolev's method, closed-form coefficients and an error estimate, verified numerically in Maple/Python.","W₂^(3,2) Sobolev fazosida hosilali optimal kvadratur formula: Sobolev usuli, koeffitsiyentlarning yopiq koʻrinishi va xatolik bahosi. Natijalar Maple/Python'da sonli tasdiqlangan.","Оптимальная квадратурная формула с производными в пространстве Соболева W₂^(3,2): метод Соболева, коэффициенты в явном виде и оценка погрешности. Результаты подтверждены численно в Maple/Python."],
+  l_paper:["Paper →","Maqola →","Статья →"],
+  p2_k:["Research · NLP","Tadqiqot · NLP","Исследование · NLP"],
+  p2_t:["Uzbek hate speech detection","Oʻzbek tilida hate speech aniqlash","Выявление языка вражды на узбекском"],
+  p2_d:["A hierarchical (binary + six-class) XLM-RoBERTa classifier trained on data collected from Instagram, Telegram and Facebook.","Instagram, Telegram va Facebook'dan yigʻilgan maʼlumotlar asosida XLM-RoBERTa'ga asoslangan ierarxik (ikkilik + olti sinfli) klassifikator.","Иерархический классификатор (бинарный + шесть классов) на базе XLM-RoBERTa, обученный на данных из Instagram, Telegram и Facebook."],
+  p3_k:["AI automation","AI-avtomatlashtirish","AI-автоматизация"],
+  p3_t:["Voice booking system for a clinic","Klinika uchun ovozli bron tizimi","Голосовая система записи для клиники"],
+  p3_d:["A fully automated appointment booking system for a medical clinic: voice AI assistant, Uzbek voice cloning and Telegram notifications.","Tibbiy klinika uchun qabulga yozilishni toʻliq avtomatlashtiruvchi tizim: ovozli AI-assistent, oʻzbekcha ovoz klonlash va Telegram orqali bildirishnomalar.","Система полной автоматизации записи на приём для медицинской клиники: голосовой AI-ассистент, клонирование узбекского голоса и уведомления в Telegram."],
+  l_demo:["Demo →","Demo / tavsif →","Демо →"],
+  p4_k:["AI agent","AI agent","AI-агент"],
+  p4_d:["A LangChain-based intelligent document agent: FastAPI backend, Kaggle notebook and a full technical report.","LangChain asosida hujjatlar bilan ishlovchi intellektual agent: FastAPI backend, Kaggle notebook va toʻliq texnik hisobot bilan yakunlangan capstone loyiha.","Интеллектуальный агент для работы с документами на базе LangChain: FastAPI-бэкенд, Kaggle-ноутбук и полный технический отчёт."],
+  p5_k:["Teaching resources","Taʼlim resurslari","Учебные ресурсы"],
+  p5_t:["Deep Learning course materials","Deep Learning oʻquv materiallari","Учебные материалы по Deep Learning"],
+  p5_d:["Lectures, exam questions and interactive widgets that visualise key concepts for an Uzbek-language deep learning course.","Oʻzbek tilidagi deep learning kursi uchun maʼruzalar, imtihon savollari va tushunchalarni vizual koʻrsatuvchi interaktiv taʼlim vidjetlari toʻplami.","Лекции, экзаменационные вопросы и интерактивные виджеты, наглядно объясняющие понятия, для курса Deep Learning на узбекском языке."],
+  pedagogy:["Pedagogy","Pedagogika","Педагогика"],
+  l_mat:["Materials →","Materiallar →","Материалы →"],
+
+  c_lead:["Professional development courses and international certificates.","Malaka oshirish kurslari va xalqaro sertifikatlar.","Курсы повышения квалификации и международные сертификаты."],
+  c_name:["Certificate name","Sertifikat nomi","Название сертификата"],
+  c_org:["Issuing organization","Beruvchi tashkilot","Организация"],
+  c_view:["View PDF","PDF koʻrish","Смотреть PDF"],
+  c_dl:["Download ↓","Yuklab olish ↓","Скачать ↓"],
+  c_note:["Note: PDF files go in a “certs” folder next to index.html (e.g. certs/sert1.pdf).","Eslatma: PDF fayllar index.html bilan bir joyda “certs” papkasida boʻlishi kerak (masalan certs/sert1.pdf).","Примечание: PDF-файлы должны лежать в папке «certs» рядом с index.html (например certs/sert1.pdf)."],
+  city:["Tashkent","Toshkent","Ташкент"]
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   SKILL TUGMALARI VA ULARNING ICHIDAGI ROʻYXAT
+   label/items: oddiy matn (hamma tilda bir xil) yoki ["EN","UZ","RU"]
+   Yangi skill qo'shish uchun shu ro'yxatga bitta qator qo'shing.
+   ═══════════════════════════════════════════════════════════════ */
+const SKILLS = [
+  {label:["Numerical methods","Sonli usullar","Численные методы"], items:[
+    ["Quadrature formulas","Kvadratur formulalar","Квадратурные формулы"],
+    ["Difference schemes","Ayirmali sxemalar","Разностные схемы"],
+    ["Error estimates","Xatolik baholari","Оценки погрешности"],
+    "Maple"]},
+  {label:["Functional analysis","Funksional analiz","Функциональный анализ"], items:[
+    ["Sobolev spaces","Sobolev fazolari","Пространства Соболева"],
+    ["Hilbert spaces","Hilbert fazolari","Гильбертовы пространства"],
+    ["Extremal functions","Ekstremal funksiyalar","Экстремальные функции"],
+    ["Variational methods","Variatsion usullar","Вариационные методы"]]},
+  {label:"Machine Learning", items:[
+    "scikit-learn","XGBoost",
+    ["Classification","Klassifikatsiya","Классификация"],
+    ["Regression","Regressiya","Регрессия"],
+    ["Clustering","Klasterlash","Кластеризация"]]},
+  {label:"Deep Learning", items:[
+    "PyTorch","TensorFlow","Keras",
+    ["Neural networks","Neyron tarmoqlar","Нейронные сети"],
+    "CNN","RNN · LSTM","Transformers"]},
+  {label:"NLP", items:[
+    "Hugging Face","BERT · XLM-RoBERTa","LangChain",
+    ["Text classification","Matn klassifikatsiyasi","Классификация текстов"],
+    ["Tokenization","Tokenizatsiya","Токенизация"]]},
+  {label:["Data Analysis","Maʼlumotlar tahlili","Анализ данных"], items:[
+    "Pandas","NumPy","Matplotlib · Seaborn","SQL","Big Data"]},
+  {label:"Python", items:[
+    "NumPy · Pandas","FastAPI","Jupyter · Kaggle",
+    ["Telegram bots","Telegram botlar","Telegram-боты"]]},
+  {label:"LaTeX", items:["Overleaf","Beamer","TikZ","BibTeX"]},
+  {label:["Automation","Avtomatlashtirish","Автоматизация"], items:[
+    "Make.com","n8n","Vapi.ai","ElevenLabs","Telegram Bot API"]}
+];
+
+/* ─── Til ─── */
+let lang = "en";
+try{ const s = localStorage.getItem("cv-lang"); if(LANGS.includes(s)) lang = s; }catch(e){}
+const tr = v => typeof v === "string" ? v : v[LANGS.indexOf(lang)];
+
+function renderSkills(){
+  const box = document.getElementById("skills");
+  box.innerHTML = "";
+  SKILLS.forEach(sk => {
+    const wrap = document.createElement("div");
+    wrap.className = "skill";
+    const btn = document.createElement("button");
+    btn.className = "tag"; btn.type = "button"; btn.setAttribute("aria-expanded","false");
+    btn.innerHTML = '<span></span><span class="car">▼</span>';
+    btn.firstChild.textContent = tr(sk.label);
+    const ul = document.createElement("ul");
+    ul.className = "dd";
+    sk.items.forEach(it => { const li = document.createElement("li"); li.textContent = tr(it); ul.appendChild(li); });
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      const wasOpen = wrap.classList.contains("open");
+      closeAll();
+      if(!wasOpen){
+        wrap.classList.add("open"); btn.setAttribute("aria-expanded","true");
+        ul.classList.remove("right");
+        if(ul.getBoundingClientRect().right > window.innerWidth - 8) ul.classList.add("right");
+      }
+    });
+    wrap.append(btn, ul);
+    box.appendChild(wrap);
+  });
+}
+function closeAll(){
+  document.querySelectorAll(".skill.open").forEach(w => {
+    w.classList.remove("open"); w.querySelector(".tag").setAttribute("aria-expanded","false");
+  });
+}
+document.addEventListener("click", e => { if(!e.target.closest(".dd")) closeAll(); });
+document.addEventListener("keydown", e => { if(e.key === "Escape") closeAll(); });
+
+function setLanguage(l){
+  lang = l;
+  try{ localStorage.setItem("cv-lang", l); }catch(e){}
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const v = T[el.dataset.i18n];
+    if(v) el.textContent = tr(v);
+  });
+  document.querySelectorAll(".lang button").forEach(b => b.classList.toggle("active", b.dataset.setlang === l));
+  renderSkills();
+}
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLanguage(b.dataset.setlang)));
+
+/* ─── Sahifalar ─── */
+const routes = {"":"home","#/":"home","#/tajriba":"tajriba","#/loyihalar":"loyihalar","#/sertifikatlar":"sertifikatlar"};
+function renderRoute(){
+  const key = routes[location.hash] || "home";
+  document.querySelectorAll(".page").forEach(p => p.classList.toggle("visible", p.id === "page-" + key));
+  document.querySelectorAll(".nav-links a").forEach(a => a.classList.toggle("active", a.dataset.route === key));
+  closeAll();
+  window.scrollTo({top:0, behavior:"instant"});
+  revealCheck();
+}
+window.addEventListener("hashchange", renderRoute);
+
+/* ─── Rasm yo'q bo'lsa — bosh harflar ─── */
+(function(){
+  const el = document.getElementById("profilePhoto");
+  const img = new Image();
+  img.onload = () => { el.textContent = ""; };
+  img.onerror = () => { el.style.backgroundImage = "none"; };
+  img.src = "profile.jpg";
+})();
+
+let observer;
+function revealCheck(){
+  if(!("IntersectionObserver" in window)){ document.querySelectorAll(".reveal").forEach(e => e.classList.add("in")); return; }
+  if(!observer) observer = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add("in"); }), {threshold:.1});
+  document.querySelectorAll(".reveal:not(.in)").forEach(el => observer.observe(el));
+}
+
+setLanguage(lang);
+renderRoute();
+</script>
+</body>
+</html>
