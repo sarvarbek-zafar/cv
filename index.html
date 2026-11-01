@@ -175,6 +175,9 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .issuer.coursera{background:#fff;border:1px solid #D5DEF5}
 .issuer.mohirdev{background:#00969C}
 .issuer.mohirdev img{max-height:20px}
+.issuer.aws{background:#007C92}
+.issuer.aws img{max-height:30px}
+.badge-thumb{height:76px;width:auto;display:block}
 .issuer.rtsi,.issuer.koica{background:#fff;border:1px solid #D5DEF5}
 .issuer.rtsi img{max-height:36px}
 .cert details img{width:100%;max-width:460px;display:block;margin:14px auto 0;border:1px solid #CDBF9F}
@@ -433,6 +436,18 @@ footer .links a{color:var(--ochre)}
 
   <div class="cert reveal">
     <div class="cert-top">
+      <div class="issuer aws"><img src="logos/aws.png" alt="AWS"></div>
+      <div><h3>AWS Academy Educator</h3><div class="meta">Amazon Web Services Training and Certification · Credly · <span data-i18n="aws_date"></span></div></div>
+      <div class="cert-actions">
+        <a href="https://www.credly.com/badges/f61eb615-849e-49fe-aed6-8b787dde554a" target="_blank" rel="noopener"><img class="badge-thumb" src="certs/aws-academy-educator.png" alt="AWS Academy Educator badge"></a>
+      </div>
+    </div>
+    <p class="desc" data-i18n="aws_d"></p>
+    <div class="stack"><span>AWS Academy</span><span>AWS Cloud Education</span><span>Cloud Education</span><span>Teach AWS Academy</span></div>
+    <a class="verify" href="https://www.credly.com/badges/f61eb615-849e-49fe-aed6-8b787dde554a" target="_blank" rel="noopener" data-i18n="c_verify_credly"></a>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-top">
       <div class="issuer rtsi"><img src="logos/rtsi.png" alt="Digital Technologies and AI Development Research Institute"></div>
       <div><h3 data-i18n="rt_t"></h3><div class="meta"><span data-i18n="rt_org"></span> · <span data-i18n="rt_date"></span> · № MT-000139</div></div>
       <div class="cert-actions">
@@ -619,6 +634,12 @@ const T = {
     "Artificial intelligence training programme of the AI Training Center established by the Korea International Cooperation Agency (KOICA) together with Tashkent International University and Cheju Halla University (Republic of Korea).",
     "Koreya xalqaro hamkorlik agentligi (KOICA), Tashkent International University va Cheju Halla universiteti (Koreya Respublikasi) hamkorligida tashkil etilgan AI Training Center'ning sunʼiy intellekt boʻyicha oʻquv dasturi.",
     "Учебная программа по искусственному интеллекту AI Training Center, созданного Корейским агентством международного сотрудничества (KOICA) совместно с Tashkent International University и Университетом Чеджу Халла (Республика Корея)."],
+  aws_date:["October 2026","2026-yil oktabr","Октябрь 2026"],
+  aws_d:[
+    "Digital badge issued by Amazon Web Services Training and Certification to members of AWS Academy: educators accredited to teach the official AWS Academy cloud computing curriculum to students at their institution.",
+    "Amazon Web Services Training and Certification tomonidan AWS Academy aʼzolariga beriladigan raqamli nishon: oʻz taʼlim muassasasida talabalarga AWS Academy'ning rasmiy bulutli hisoblash oʻquv dasturini oʻqitish huquqiga ega oʻqituvchilar uchun.",
+    "Цифровой бейдж от Amazon Web Services Training and Certification для участников AWS Academy: преподавателей, аккредитованных вести официальную программу AWS Academy по облачным вычислениям для студентов своего вуза."],
+  c_verify_credly:["Verify on Credly →","Credly'da tekshirish →","Проверить на Credly →"],
   c_view_img:["View","Koʻrish","Смотреть"],
   practicum:["Practicum","Praktikum","Практикум"],
   jul2026:["July 2026","2026-yil iyul","Июль 2026"],
