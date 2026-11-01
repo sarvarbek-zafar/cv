@@ -144,6 +144,11 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .orn i{width:14px;height:14px;background:var(--turq)}
 .page-head p{color:#CCD5F3;max-width:640px}
 .edu-head{margin-top:48px}
+.pubs .authors{font-size:.86rem;color:var(--ink);margin-top:4px}
+.pubs .authors b{color:var(--lapis)}
+.pubs .org{margin:2px 0 6px}
+.pubs .abs{font-size:.9rem;color:var(--ink-soft)}
+.pubs .plink{margin-top:8px}
 
 /* ═══ TAJRIBA ═══ */
 .xp-list{padding:10px 34px;margin:11px}
@@ -392,7 +397,7 @@ footer .links a{color:var(--ochre)}
       <h3 data-i18n="p1_t"></h3>
       <p data-i18n="p1_d"></p>
       <div class="stack"><span>LaTeX</span><span>Maple</span><span>Python</span></div>
-      <div class="plink"><a href="#" target="_blank" data-i18n="l_paper"></a></div>
+      <div class="plink"><a href="papers/polvonov-2026-optimal-quadrature-hilbert.pdf" target="_blank" data-i18n="l_paper"></a></div>
     </div>
     <div class="proj reveal" style="border-top-color:var(--turq)">
       <span class="kind" data-i18n="p2_k"></span>
@@ -421,6 +426,46 @@ footer .links a{color:var(--ochre)}
       <p data-i18n="p5_d"></p>
       <div class="stack"><span>HTML/JS</span><span data-i18n="pedagogy"></span></div>
       <div class="plink"><a href="#" target="_blank" data-i18n="l_mat"></a></div>
+    </div>
+  </div>
+
+  <div class="page-head edu-head">
+    <h2 data-i18n="pubs"></h2>
+    <div class="orn"><i class="star"></i></div>
+  </div>
+  <div class="panel xp-list pubs">
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--lapis)"></span>
+      <div class="xp-date">2026</div>
+      <div>
+        <h3>Optimal quadrature formula with multiple nodes in a Hilbert space</h3>
+        <div class="authors"><b>S. Z. Polvonov</b></div>
+        <div class="org"><i>Problems of Computational and Applied Mathematics</i>, 3(73), 1–16</div>
+        <p class="abs" data-i18n="pub1_d"></p>
+        <div class="plink"><a href="papers/polvonov-2026-optimal-quadrature-hilbert.pdf" target="_blank" rel="noopener" data-i18n="l_pdf"></a></div>
+      </div>
+    </div>
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--turq)"></span>
+      <div class="xp-date">2022</div>
+      <div>
+        <h3>Numerical Integration of Fourier Integrals by the Optimal Quadrature Formula Exact for Hyperbolic Functions</h3>
+        <div class="authors">A. Hayotov, A. Kurbonnazarov, <b>S. Polvonov</b></div>
+        <div class="org" data-i18n="pub2_v"></div>
+        <p class="abs" data-i18n="pub2_d"></p>
+        <div class="plink"><a href="papers/hayotov-kurbonnazarov-polvonov-2022-fourier-integrals.pdf" target="_blank" rel="noopener" data-i18n="l_pdf"></a></div>
+      </div>
+    </div>
+    <div class="xp reveal">
+      <span class="xp-dot star" style="background:var(--ochre)"></span>
+      <div class="xp-date">&nbsp;</div>
+      <div>
+        <h3>Optimal Interpolation Formulas Exact for Trigonometric Functions</h3>
+        <div class="authors">S. S. Babaev, J. R. Davronov, A. Abdullaev, <b>S. Z. Polvonov</b></div>
+        <div class="org" data-i18n="pub3_v"></div>
+        <p class="abs" data-i18n="pub3_d"></p>
+        <div class="plink"><a href="papers/babaev-davronov-abdullaev-polvonov-interpolation-trigonometric.pdf" target="_blank" rel="noopener" data-i18n="l_pdf"></a></div>
+      </div>
     </div>
   </div>
 </section>
@@ -598,6 +643,22 @@ const T = {
   e2_t:["Bachelor's degree — Power Engineering (Thermal Power Engineering)","Bakalavriat — Energetika (issiqlik energetikasi)","Бакалавриат — энергетика (теплоэнергетика)"],
   e2_o:["Islam Karimov Tashkent State Technical University","Islom Karimov nomidagi Toshkent davlat texnika universiteti","Ташкентский государственный технический университет имени Ислама Каримова"],
   e2_b1:["Field of study 5310100 — Power Engineering (thermal power engineering).","Taʼlim yoʻnalishi 5310100 — Energetika (issiqlik energetikasi).","Направление 5310100 — энергетика (теплоэнергетика)."],
+  pubs:["Publications","Ilmiy maqolalar","Научные публикации"],
+  l_pdf:["Read PDF →","PDF oʻqish →","Читать PDF →"],
+  pub1_d:[
+    "Constructs an optimal Sard-type quadrature formula in the Hilbert space W₂,σ⁽³,²⁾(0,1) that keeps first-derivative weights at every node and is exact for constants, linear functions and a decaying exponential. Using Sobolev's method, the norm of the error functional is found in closed form and the optimal weights are obtained from a uniquely solvable Wiener–Hopf type system.",
+    "W₂,σ⁽³,²⁾(0,1) Hilbert fazosida har bir tugunda birinchi tartibli hosila vaznlari saqlangan, oʻzgarmas, chiziqli funksiya va soʻnuvchi eksponentaga aniq boʻlgan Sard maʼnosidagi optimal kvadratur formula qurilgan. Sobolev usuli yordamida xatolik funksionali normasi yopiq koʻrinishda topilgan, optimal vaznlar esa yagona yechimga ega Viner–Xopf tipidagi sistemadan aniqlangan.",
+    "Построена оптимальная в смысле Сарда квадратурная формула в гильбертовом пространстве W₂,σ⁽³,²⁾(0,1), сохраняющая веса первых производных во всех узлах и точная для константы, линейной функции и убывающей экспоненты. Методом Соболева норма функционала погрешности найдена в явном виде, а оптимальные веса определяются из однозначно разрешимой системы типа Винера–Хопфа."],
+  pub2_v:["MPAMIT-2022 conference paper","MPAMIT-2022 konferensiyasi maqolasi","Статья конференции MPAMIT-2022"],
+  pub2_d:[
+    "Constructs an optimal quadrature formula for the numerical computation of Fourier integrals that is exact for the hyperbolic functions sinh x and cosh x, using the discrete analogue of the operator d⁴/dx⁴ − 2d²/dx² + 1; explicit expressions for the optimal coefficients are obtained.",
+    "d⁴/dx⁴ − 2d²/dx² + 1 operatorining diskret analogi yordamida Furye integrallarini sonli hisoblash uchun sinh x va cosh x giperbolik funksiyalarga aniq boʻlgan optimal kvadratur formula qurilgan va optimal koeffitsiyentlarning oshkor koʻrinishlari topilgan.",
+    "С помощью дискретного аналога оператора d⁴/dx⁴ − 2d²/dx² + 1 построена оптимальная квадратурная формула для численного вычисления интегралов Фурье, точная для гиперболических функций sinh x и cosh x; получены явные выражения для оптимальных коэффициентов."],
+  pub3_v:["Conference paper","Konferensiya maqolasi","Статья конференции"],
+  pub3_d:[
+    "Studies optimal interpolation formulas in the Hilbert space K₂(P₂): the norm of the error functional is found, a linear system for the coefficients is derived, and explicit formulas for the optimal coefficients are obtained via the discrete analogue of the operator d⁴/dx⁴ + 2ω²d²/dx² + ω⁴.",
+    "K₂(P₂) Hilbert fazosida optimal interpolyatsion formulalar tadqiq qilingan: xatolik funksionali normasi topilgan, koeffitsiyentlar uchun chiziqli tenglamalar sistemasi olingan va d⁴/dx⁴ + 2ω²d²/dx² + ω⁴ operatorining diskret analogi yordamida optimal koeffitsiyentlarning oshkor formulalari topilgan.",
+    "Исследованы оптимальные интерполяционные формулы в гильбертовом пространстве K₂(P₂): найдена норма функционала погрешности, получена система линейных уравнений для коэффициентов и с помощью дискретного аналога оператора d⁴/dx⁴ + 2ω²d²/dx² + ω⁴ найдены явные формулы оптимальных коэффициентов."],
   p_lead:["Research papers, applied AI systems and teaching resources.","Ilmiy ishlar, amaliy AI tizimlari va taʼlim resurslari.","Научные работы, прикладные AI-системы и учебные ресурсы."],
   p1_k:["Research paper","Ilmiy maqola","Научная статья"],
   p1_t:["Optimal quadrature formulas","Optimal kvadratur formulalar","Оптимальные квадратурные формулы"],
