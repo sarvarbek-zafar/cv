@@ -16,14 +16,14 @@
   --turq:#2FA8C4;
   --turq-deep:#157F97;
   --turq-light:#8FD9E6;
-  --malachite:#1E7A55;
+  --malachite:#11603F;
   --ochre:#C99A3E;
-  --ochre-deep:#8F6418;
+  --ochre-deep:#7A4E0A;
   --ivory:#F6EFE1;
   --ivory-2:#EADFC8;
   --grout:#F7F1E6;
-  --ink:#141B3D;
-  --ink-soft:#4B5068;
+  --ink:#0B1130;
+  --ink-soft:#252B47;
   --display:"Cormorant Garamond", Georgia, serif;
   --sans:"Inter", system-ui, sans-serif;
   --mono:"JetBrains Mono", ui-monospace, monospace;
@@ -113,18 +113,18 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .skill.open .car{transform:rotate(180deg)}
 .dd{
   display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:40;min-width:210px;list-style:none;
-  background:var(--ivory);border:2px solid var(--lapis);border-top:4px solid var(--ochre);border-radius:3px;
+  background:linear-gradient(rgba(246,239,225,.8),rgba(246,239,225,.8)),url("img/naqsh.webp") center/220px,var(--ivory);border:2px solid var(--lapis);border-top:4px solid var(--ochre);border-radius:3px;
   box-shadow:0 16px 34px rgba(5,10,40,.35);padding:8px 6px;
 }
 .dd.right{left:auto;right:0}
 .skill.open .dd{display:block}
 .skill.open{z-index:45}
 @media(hover:hover) and (pointer:fine){.skill:hover .dd{display:block}.skill:hover{z-index:45}.skill:hover .tag{background:var(--turq-deep);border-color:var(--turq-deep)}.skill:hover .car{transform:rotate(180deg)}.skill .dd::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}}
-.dd li{text-align:left;position:relative;font-size:.84rem;color:var(--ink);padding:5px 10px 5px 26px;border-radius:2px;white-space:nowrap}
+.dd li{text-align:left;position:relative;font-size:.86rem;font-weight:600;color:var(--ink);padding:5px 10px 5px 26px;border-radius:2px;white-space:nowrap}
 .dd li::before{content:"";position:absolute;left:11px;top:50%;width:7px;height:7px;background:var(--turq);transform:translateY(-50%) rotate(45deg)}
 .dd li:nth-child(3n+2)::before{background:var(--malachite)}
 .dd li:nth-child(3n)::before{background:var(--ochre)}
-.dd li:hover{background:var(--ivory-2)}
+.dd li:hover{background:rgba(246,239,225,.95)}
 
 /* ═══ YO'NALISH KARTALARI ═══ */
 .routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin:52px 6px 0}
@@ -172,7 +172,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .proj h3{font-family:var(--display);font-weight:700;font-size:1.45rem;line-height:1.2;color:var(--lapis);margin:4px 0 8px}
 .proj p{font-size:.9rem;color:var(--ink-soft);flex:1}
 .stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
-.stack span{font-family:var(--mono);font-size:.66rem;background:#E3E8F7;color:var(--lapis);border-radius:2px;padding:3px 8px}
+.stack span{font-family:var(--mono);font-size:.66rem;font-weight:500;background:#DDE3F6;color:var(--lapis-900);border-radius:2px;padding:3px 8px}
 .plink{margin-top:14px;font-family:var(--mono);font-size:.76rem}
 
 /* ═══ SERTIFIKATLAR ═══ */
@@ -217,6 +217,10 @@ footer .links a{color:var(--ochre)}
 #page-loyihalar .page-head{background:linear-gradient(var(--veil-dark),var(--veil-dark)),url("img/naqsh-girih.svg") 0 0/80px}
 #page-sertifikatlar .page-head{background:linear-gradient(var(--veil-dark),var(--veil-dark)),url("img/naqsh-mozaika.svg") 0 0/110px}
 
+/* naqsh ustidagi matn aniq o'qilishi uchun yumshoq och "halo" */
+.panel,.route,.proj,.cert,.dd{text-shadow:0 0 3px var(--ivory),0 0 7px var(--ivory),0 0 12px rgba(246,239,225,.85)}
+.tag,.stack span,.issuer,.cert-actions summary,.nav-links a{text-shadow:none}
+.role{font-weight:700}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .reveal.in{opacity:1;transform:none}
 
