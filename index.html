@@ -68,7 +68,7 @@ nav{
 
 /* ═══ HERO ═══ */
 .hero{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;padding:40px 44px;margin:11px}
-.hero.panel{background:linear-gradient(rgba(246,239,225,.84),rgba(246,239,225,.84)),url("img/naqsh.webp") center/420px 420px repeat,var(--ivory)}
+.hero.panel{background:linear-gradient(rgba(246,239,225,.74),rgba(246,239,225,.74)),url("img/naqsh.webp") center/420px 420px repeat,var(--ivory)}
 .photo-wrap{position:relative;width:230px;height:230px;flex-shrink:0}
 .stars{position:absolute;inset:0;animation:spin 60s linear infinite}
 .stars .s1{position:absolute;inset:0;background:var(--lapis)}
@@ -84,7 +84,7 @@ nav{
 .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--malachite)}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);line-height:1;color:var(--lapis);margin:8px 0 6px}
 .role{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.35rem;color:var(--ochre-deep);margin-bottom:12px}
-.lead{max-width:580px;color:var(--ink-soft)}
+.lead{max-width:580px;color:var(--ink)}
 
 /* ═══ ALOQA TUGMALARI ═══ */
 .contact-row{display:flex;gap:16px;margin-top:22px;flex-wrap:wrap}
@@ -118,6 +118,8 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 }
 .dd.right{left:auto;right:0}
 .skill.open .dd{display:block}
+.skill.open{z-index:45}
+@media(hover:hover) and (pointer:fine){.skill:hover .dd{display:block}.skill:hover{z-index:45}.skill:hover .tag{background:var(--turq-deep);border-color:var(--turq-deep)}.skill:hover .car{transform:rotate(180deg)}.skill .dd::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}}
 .dd li{text-align:left;position:relative;font-size:.84rem;color:var(--ink);padding:5px 10px 5px 26px;border-radius:2px;white-space:nowrap}
 .dd li::before{content:"";position:absolute;left:11px;top:50%;width:7px;height:7px;background:var(--turq);transform:translateY(-50%) rotate(45deg)}
 .dd li:nth-child(3n+2)::before{background:var(--malachite)}
@@ -206,7 +208,7 @@ footer .links{display:flex;gap:18px;font-family:var(--mono);font-size:.78rem;fle
 footer .links a{color:var(--ochre)}
 
 /* ═══ NAQSH FONLARI — har bo'limga o'z naqshi, ustida yarim shaffof qatlam ═══ */
-:root{--veil:rgba(246,239,225,.88);--veil-strong:rgba(246,239,225,.92);--veil-dark:rgba(11,21,80,.86)}
+:root{--veil:rgba(246,239,225,.78);--veil-strong:rgba(246,239,225,.84);--veil-dark:rgba(11,21,80,.76)}
 .route{background:linear-gradient(var(--veil-strong),var(--veil-strong)),url("img/naqsh.webp") center/260px,var(--ivory)}
 #page-tajriba .xp-list{background:linear-gradient(var(--veil),var(--veil)),url("img/naqsh-yulduz.webp") center/320px,var(--ivory)}
 #page-loyihalar .proj,#page-loyihalar .pubs{background:linear-gradient(var(--veil-strong),var(--veil-strong)),url("img/naqsh-girih.svg") 0 0/90px,var(--ivory)}
@@ -808,6 +810,10 @@ function renderSkills(){
         ul.classList.remove("right");
         if(ul.getBoundingClientRect().right > window.innerWidth - 8) ul.classList.add("right");
       }
+    });
+    wrap.addEventListener("mouseenter", () => {
+      ul.classList.remove("right");
+      if(ul.getBoundingClientRect().right > window.innerWidth - 8) ul.classList.add("right");
     });
     wrap.append(btn, ul);
     box.appendChild(wrap);
