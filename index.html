@@ -98,23 +98,23 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
 .skill{position:relative}
 .tag{
-  font-family:var(--mono);font-size:.74rem;font-weight:500;color:var(--ivory);
-  background:var(--lapis);border:1px solid var(--lapis);border-radius:3px;padding:7px 11px 7px 12px;
+  font-family:var(--mono);font-size:.74rem;font-weight:700;color:#08245A;
+  background:linear-gradient(135deg,#CDEBFA,#C9EFD6);border:1px solid #8CCBB0;border-radius:3px;padding:7px 11px 7px 12px;
   cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:background .15s;
 }
-.tag:hover{background:var(--lapis-600)}
+.tag:hover{background:linear-gradient(135deg,#B6E1F7,#B3E8C6)}
 .tag .car{font-size:.55rem;opacity:.8;transition:transform .2s}
-.skill.open .tag{background:var(--turq-deep);border-color:var(--turq-deep)}
+.skill.open .tag{background:linear-gradient(135deg,#9BD6F2,#93DDB0);border-color:#4FAE83;color:#05183F}
 .skill.open .car{transform:rotate(180deg)}
 .dd{
   display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:40;min-width:210px;list-style:none;
-  background:var(--ivory);border:2px solid var(--lapis);border-top:4px solid var(--ochre);border-radius:3px;
+  background:var(--ivory);border:2px solid #8CCBB0;border-top:4px solid #7CC4EA;border-radius:3px;
   box-shadow:0 16px 34px rgba(5,10,40,.35);padding:8px 6px;
 }
 .dd.right{left:auto;right:0}
 .skill.open .dd{display:block}
 .skill.open{z-index:45}
-@media(hover:hover) and (pointer:fine){.skill:hover .dd{display:block}.skill:hover{z-index:45}.skill:hover .tag{background:var(--turq-deep);border-color:var(--turq-deep)}.skill:hover .car{transform:rotate(180deg)}.skill .dd::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}}
+@media(hover:hover) and (pointer:fine){.skill:hover .dd{display:block}.skill:hover{z-index:45}.skill:hover .tag{background:linear-gradient(135deg,#9BD6F2,#93DDB0);border-color:#4FAE83;color:#05183F}.skill:hover .car{transform:rotate(180deg)}.skill .dd::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}}
 .dd li{text-align:left;position:relative;font-size:.86rem;font-weight:600;color:var(--ink);padding:5px 10px 5px 26px;border-radius:2px;white-space:nowrap}
 .dd li::before{content:"";position:absolute;left:11px;top:50%;width:7px;height:7px;background:var(--turq);transform:translateY(-50%) rotate(45deg)}
 .dd li:nth-child(3n+2)::before{background:var(--malachite)}
