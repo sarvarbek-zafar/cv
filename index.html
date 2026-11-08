@@ -22,8 +22,8 @@
   --ivory:#F6EFE1;
   --ivory-2:#EADFC8;
   --grout:#F7F1E6;
-  --ink:#0B1130;
-  --ink-soft:#252B47;
+  --ink:#05081C;
+  --ink-soft:#0B1130;
   --display:"Cormorant Garamond", Georgia, serif;
   --sans:"Inter", system-ui, sans-serif;
   --mono:"JetBrains Mono", ui-monospace, monospace;
@@ -69,27 +69,17 @@ nav{
 /* ═══ HERO ═══ */
 .hero{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;padding:40px 44px;margin:11px}
 .hero.panel{background:linear-gradient(rgba(246,239,225,.74),rgba(246,239,225,.74)),url("img/naqsh.webp") center/420px 420px repeat,var(--ivory)}
-/* Rasm ramkasi — Registon peshtoqi uslubidagi ravoq (arka) */
-.photo-wrap{position:relative;width:224px;height:292px;flex-shrink:0;filter:drop-shadow(0 18px 26px rgba(3,8,40,.38))}
-.arch{position:absolute;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' preserveAspectRatio='none'%3E%3Cpath d='M0 130V46C0 22 28 9 50 0C72 9 100 22 100 46V130Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' preserveAspectRatio='none'%3E%3Cpath d='M0 130V46C0 22 28 9 50 0C72 9 100 22 100 46V130Z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
-.arch.a1{inset:0;background:linear-gradient(160deg,#E2BE6A,var(--ochre) 45%,var(--ochre-deep))}
-.arch.a2{inset:3px;background:var(--lapis-900)}
-.arch.a3{inset:8px;background:url("img/naqsh-girih.svg") 0 0/34px}
-.arch.a4{inset:20px;background:var(--lapis-900)}
-.arch.a5{inset:23px;background:linear-gradient(160deg,#E2BE6A,var(--ochre))}
+/* Rasm — oddiy aylana */
+.photo-wrap{position:relative;width:210px;height:210px;flex-shrink:0}
 .photo{
-  position:absolute;inset:26px;
-  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' preserveAspectRatio='none'%3E%3Cpath d='M0 130V46C0 22 28 9 50 0C72 9 100 22 100 46V130Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' preserveAspectRatio='none'%3E%3Cpath d='M0 130V46C0 22 28 9 50 0C72 9 100 22 100 46V130Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+  position:absolute;inset:0;border-radius:50%;border:5px solid #fff;box-shadow:0 0 0 3px var(--lapis),0 14px 30px rgba(3,8,40,.3);
   background:var(--lapis) url('profile.jpg') center 22%/cover no-repeat;
   display:flex;align-items:center;justify-content:center;
   font-family:var(--display);font-weight:700;font-size:2.8rem;color:var(--ivory);
 }
-.photo-wrap::before{content:"";position:absolute;z-index:2;top:-13px;left:50%;width:20px;height:20px;margin-left:-10px;clip-path:var(--star);background:linear-gradient(160deg,#E2BE6A,var(--ochre-deep))}
-.photo-wrap::after{content:"";position:absolute;left:-10px;right:-10px;bottom:-8px;height:10px;border-radius:2px;
-  background:linear-gradient(var(--ochre),var(--ochre-deep));box-shadow:0 0 0 2px var(--lapis-900)}
-.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--malachite)}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lapis);font-weight:500}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);line-height:1;color:var(--lapis);margin:8px 0 6px}
-.role{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.35rem;color:var(--ochre-deep);margin-bottom:12px}
+.role{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.35rem;color:var(--lapis-900);margin-bottom:12px}
 .lead{max-width:580px;color:var(--ink)}
 
 /* ═══ ALOQA TUGMALARI ═══ */
@@ -166,7 +156,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .xp-dot{width:18px;height:18px;margin-top:6px;flex-shrink:0}
 .xp-date{font-family:var(--mono);font-size:.74rem;color:var(--ink-soft);min-width:104px;padding-top:6px;flex-shrink:0}
 .xp h3{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.25;color:var(--lapis)}
-.xp .org{font-weight:600;font-size:.88rem;color:var(--malachite);margin:2px 0 8px}
+.xp .org{font-weight:700;font-size:.88rem;color:var(--lapis-600);margin:2px 0 8px}
 .xp ul{margin-left:18px;color:var(--ink-soft);font-size:.92rem}
 .xp li{margin-bottom:4px}
 .xp li::marker{color:var(--ochre)}
@@ -174,7 +164,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 /* ═══ LOYIHALAR ═══ */
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin:6px}
 .proj{background:var(--ivory);border-radius:3px;box-shadow:var(--frame-sm);padding:22px;display:flex;flex-direction:column;border-top:6px solid var(--turq)}
-.proj .kind{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ochre-deep)}
+.proj .kind{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lapis-600);font-weight:500}
 .proj h3{font-family:var(--display);font-weight:700;font-size:1.45rem;line-height:1.2;color:var(--lapis);margin:4px 0 8px}
 .proj p{font-size:.9rem;color:var(--ink-soft);flex:1}
 .stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
@@ -201,7 +191,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .cert-actions{margin-left:auto;display:flex;gap:12px;align-items:center}
 .cert-actions summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:.74rem;color:var(--lapis);padding:6px 12px;border:1px solid var(--lapis);border-radius:3px}
 .cert-actions summary::-webkit-details-marker{display:none}
-.cert-actions .dl{font-family:var(--mono);font-size:.74rem;color:var(--malachite)}
+.cert-actions .dl{font-family:var(--mono);font-size:.74rem;font-weight:500;color:var(--lapis-900)}
 .cert iframe{width:100%;height:420px;border:1px solid #CDBF9F;margin-top:14px;background:#fff}
 .cert .desc{font-size:.9rem;color:var(--ink-soft);margin-top:12px}
 .cert .verify{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:.74rem;color:var(--lapis-600)}
@@ -227,6 +217,8 @@ footer .links a{color:var(--ochre)}
 .panel,.route,.proj,.cert,.dd{text-shadow:0 0 3px var(--ivory),0 0 7px var(--ivory),0 0 12px rgba(246,239,225,.85)}
 .tag,.stack span,.issuer,.cert-actions summary,.nav-links a{text-shadow:none}
 .role{font-weight:700}
+.lead,.xp ul,.proj p,.cert .desc,.pubs .abs,.route p{color:var(--ink);font-weight:500}
+.cert .meta,.xp-date,.cbtn .lbl{color:var(--ink);font-weight:500}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .reveal.in{opacity:1;transform:none}
 
@@ -234,9 +226,7 @@ footer .links a{color:var(--ochre)}
   nav{padding:10px 16px;position:relative}
   .page{padding:32px 16px 70px}
   .hero{grid-template-columns:1fr;justify-items:center;text-align:center;padding:30px 20px;gap:26px}
-  .photo-wrap{width:184px;height:240px}
-  .photo{inset:24px}
-  .arch.a4{inset:18px}.arch.a5{inset:21px}
+  .photo-wrap{width:170px;height:170px}
   .lead{margin:0 auto}
   .contact-row,.skills{justify-content:center}
   .contact-row{gap:8px}
@@ -271,7 +261,6 @@ footer .links a{color:var(--ochre)}
 <section class="page" id="page-home">
   <div class="hero panel">
     <div class="photo-wrap">
-      <div class="arch a1"></div><div class="arch a2"></div><div class="arch a3"></div><div class="arch a4"></div><div class="arch a5"></div>
       <div class="photo" id="profilePhoto">SP</div>
     </div>
     <div>
