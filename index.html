@@ -44,19 +44,19 @@ a{color:var(--lapis-600);text-decoration:none}
 
 /* ═══ NAV ═══ */
 nav{
-  position:sticky;top:0;z-index:50;background:rgba(11,21,80,.94);backdrop-filter:blur(8px);
+  position:sticky;top:0;z-index:50;background:rgba(232,244,252,.95);box-shadow:0 2px 12px rgba(11,21,80,.12);backdrop-filter:blur(8px);
   border-bottom:4px double var(--ochre);
   display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 28px;
 }
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.55rem;color:var(--ivory);letter-spacing:.02em}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.55rem;color:var(--lapis-900);letter-spacing:.02em}
 .brand i{width:20px;height:20px;background:var(--ochre)}
 .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .nav-links{display:flex;gap:2px;flex-wrap:wrap}
-.nav-links a{font-family:var(--mono);font-size:.76rem;color:rgba(246,239,225,.82);padding:7px 12px;border-radius:3px}
-.nav-links a:hover{color:var(--ivory);background:rgba(246,239,225,.08)}
-.nav-links a.active{background:var(--ivory);color:var(--lapis-900)}
+.nav-links a{font-family:var(--mono);font-size:.76rem;font-weight:600;color:var(--lapis-900);padding:7px 12px;border-radius:3px}
+.nav-links a:hover{color:var(--lapis-900);background:rgba(28,47,150,.08)}
+.nav-links a.active{background:var(--lapis);color:#fff}
 .lang{display:flex;border:1px solid var(--ochre);border-radius:3px;overflow:hidden}
-.lang button{font-family:var(--mono);font-size:.72rem;font-weight:500;border:0;background:transparent;color:var(--ivory);padding:6px 11px;cursor:pointer}
+.lang button{font-family:var(--mono);font-size:.72rem;font-weight:500;border:0;background:transparent;color:var(--lapis-900);font-weight:600;padding:6px 11px;cursor:pointer}
 .lang button+button{border-left:1px solid rgba(201,154,62,.5)}
 .lang button.active{background:var(--ochre);color:var(--lapis-900)}
 
@@ -197,10 +197,10 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .cert .verify:hover{text-decoration:underline}
 
 /* ═══ FUTER ═══ */
-footer{border-top:4px double var(--ochre);background:rgba(11,21,80,.94)}
-footer .in{max-width:1000px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:#CCD5F3;font-size:.85rem}
+footer{border-top:4px double var(--ochre);background:rgba(232,244,252,.95)}
+footer .in{max-width:1000px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:var(--lapis-900);font-weight:500;font-size:.85rem}
 footer .links{display:flex;gap:18px;font-family:var(--mono);font-size:.78rem;flex-wrap:wrap}
-footer .links a{color:var(--ochre)}
+footer .links a{color:var(--lapis);font-weight:600}
 
 
 .role{font-weight:700}
