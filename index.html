@@ -191,6 +191,9 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);l
 .cert-actions summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:.74rem;color:var(--lapis);padding:6px 12px;border:1px solid var(--lapis);border-radius:3px}
 .cert-actions summary::-webkit-details-marker{display:none}
 .cert-actions .dl{font-family:var(--mono);font-size:.74rem;font-weight:500;color:var(--lapis-900)}
+.xp-actions{margin:12px 0 0;align-items:flex-start;width:100%}
+.xp-actions details[open]{flex:1}
+.xp iframe{width:100%;height:520px;border:1px solid #CDBF9F;margin-top:12px;background:#fff}
 .cert iframe{width:100%;height:420px;border:1px solid #CDBF9F;margin-top:14px;background:#fff}
 .cert .desc{font-size:.9rem;color:var(--ink-soft);margin-top:12px}
 .cert .verify{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:.74rem;color:var(--lapis-600)}
@@ -368,6 +371,10 @@ footer .links a{color:var(--lapis);font-weight:600}
         <h3 data-i18n="e1_t"></h3>
         <div class="org" data-i18n="e1_o"></div>
         <ul><li data-i18n="e1_b1"></li><li data-i18n="e1_b2"></li></ul>
+        <div class="cert-actions xp-actions">
+          <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/diplom-magistr-buxdu.pdf" title="Master's diploma"></iframe></details>
+          <a class="dl" href="certs/diplom-magistr-buxdu.pdf" download data-i18n="c_dl"></a>
+        </div>
       </div>
     </div>
     <div class="xp reveal">
@@ -377,6 +384,10 @@ footer .links a{color:var(--lapis);font-weight:600}
         <h3 data-i18n="e2_t"></h3>
         <div class="org" data-i18n="e2_o"></div>
         <ul><li data-i18n="e2_b1"></li></ul>
+        <div class="cert-actions xp-actions">
+          <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/diplom-bakalavr-tdtu.pdf" title="Bachelor's diploma"></iframe></details>
+          <a class="dl" href="certs/diplom-bakalavr-tdtu.pdf" download data-i18n="c_dl"></a>
+        </div>
       </div>
     </div>
   </div>
@@ -508,7 +519,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
       <div><h3>Data Science va Sunʼiy Intellekt</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-329438fc</div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-data-science-ai.pdf" title="Data Science va Sunʼiy Intellekt certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/mohirdev-data-science-ai.pdf" title="Data Science va Sunʼiy Intellekt certificate"></iframe></details>
         <a class="dl" href="certs/mohirdev-data-science-ai.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -520,7 +531,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
       <div><h3>Computer Vision</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-a4d62c12</div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-computer-vision.pdf" title="Computer Vision certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/mohirdev-computer-vision.pdf" title="Computer Vision certificate"></iframe></details>
         <a class="dl" href="certs/mohirdev-computer-vision.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -532,7 +543,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer mohirdev"><img src="logos/mohirdev.png" alt="Mohirdev"></div>
       <div><h3>Sunʼiy intellekt — NLP</h3><div class="meta">Mohirdev · <span data-i18n="practicum"></span> · <span data-i18n="jul2026"></span> · ID prac-34789a21</div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/mohirdev-nlp.pdf" title="Sunʼiy intellekt — NLP certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/mohirdev-nlp.pdf" title="Sunʼiy intellekt — NLP certificate"></iframe></details>
         <a class="dl" href="certs/mohirdev-nlp.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -544,7 +555,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer coursera"><img src="logos/coursera.png" alt="Coursera"></div>
       <div><h3>IoT (Internet of Things) Wireless &amp; Cloud Computing Emerging Technologies</h3><div class="meta">Coursera · Yonsei University · <span data-i18n="c1_date"></span></div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-iot-yonsei.pdf" title="IoT Wireless &amp; Cloud Computing certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/coursera-iot-yonsei.pdf" title="IoT Wireless &amp; Cloud Computing certificate"></iframe></details>
         <a class="dl" href="certs/coursera-iot-yonsei.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -556,7 +567,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer koica"><img src="logos/koica.png" alt="KOICA"></div>
       <div><h3>KOICA–TIU–Cheju Halla AI Training Center</h3><div class="meta">KOICA · Tashkent International University · Cheju Halla University · <span data-i18n="k_date"></span></div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/koica-tiu-cheju-halla-ai.pdf" title="KOICA AI Training Center certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/koica-tiu-cheju-halla-ai.pdf" title="KOICA AI Training Center certificate"></iframe></details>
         <a class="dl" href="certs/koica-tiu-cheju-halla-ai.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -567,7 +578,7 @@ footer .links a{color:var(--lapis);font-weight:600}
       <div class="issuer coursera"><img src="logos/coursera.png" alt="Coursera"></div>
       <div><h3>Programming for Data Science</h3><div class="meta">Coursera · University of Leeds · <span data-i18n="c2_date"></span></div></div>
       <div class="cert-actions">
-        <details><summary data-i18n="c_view"></summary><iframe src="certs/coursera-data-science-leeds.pdf" title="Programming for Data Science certificate"></iframe></details>
+        <details><summary data-i18n="c_view"></summary><iframe loading="lazy" src="certs/coursera-data-science-leeds.pdf" title="Programming for Data Science certificate"></iframe></details>
         <a class="dl" href="certs/coursera-data-science-leeds.pdf" download data-i18n="c_dl"></a>
       </div>
     </div>
@@ -838,6 +849,16 @@ function renderRoute(){
   revealCheck();
 }
 window.addEventListener("hashchange", renderRoute);
+
+/* ─── PDF: brauzer ichida ko'rsata olmasa (telefonlar) — yangi oynada ochish ─── */
+const canInlinePdf = navigator.pdfViewerEnabled === true ||
+  (navigator.pdfViewerEnabled === undefined && !/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent));
+if(!canInlinePdf){
+  document.querySelectorAll("details > iframe").forEach(fr => {
+    const summary = fr.parentElement.querySelector("summary");
+    summary.addEventListener("click", e => { e.preventDefault(); window.open(fr.getAttribute("src"), "_blank", "noopener"); });
+  });
+}
 
 /* ─── Rasm yo'q bo'lsa — bosh harflar ─── */
 (function(){
