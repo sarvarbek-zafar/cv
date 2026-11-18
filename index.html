@@ -757,16 +757,22 @@ const T = {
    Yangi skill qo'shish uchun shu ro'yxatga bitta qator qo'shing.
    ═══════════════════════════════════════════════════════════════ */
 const SKILLS = [
-  {label:["Numerical methods","Sonli usullar","Численные методы"], items:[
-    ["Quadrature formulas","Kvadratur formulalar","Квадратурные формулы"],
-    ["Difference schemes","Ayirmali sxemalar","Разностные схемы"],
-    ["Error estimates","Xatolik baholari","Оценки погрешности"],
-    "Maple"]},
-  {label:["Functional analysis","Funksional analiz","Функциональный анализ"], items:[
-    ["Sobolev spaces","Sobolev fazolari","Пространства Соболева"],
-    ["Hilbert spaces","Hilbert fazolari","Гильбертовы пространства"],
-    ["Extremal functions","Ekstremal funksiyalar","Экстремальные функции"],
-    ["Variational methods","Variatsion usullar","Вариационные методы"]]},
+  /* ── IT ko'nikmalari ── */
+  {label:"Data Science", items:[
+    ["Statistical analysis","Statistik tahlil","Статистический анализ"],
+    ["Feature engineering","Belgilar muhandisligi (feature engineering)","Инженерия признаков"],
+    ["Predictive modeling","Bashoratli modellashtirish","Прогнозное моделирование"],
+    ["Model evaluation & validation","Modelni baholash va validatsiya","Оценка и валидация моделей"],
+    "Jupyter · Kaggle","Big Data"]},
+  {label:["Data Analysis","Maʼlumotlar tahlili","Анализ данных"], items:[
+    "Pandas · NumPy","Matplotlib · Seaborn",
+    ["Data cleaning","Maʼlumotlarni tozalash","Очистка данных"],
+    ["Exploratory data analysis (EDA)","Razvedka tahlili (EDA)","Разведочный анализ (EDA)"],
+    ["Reporting & visualisation","Hisobot va vizualizatsiya","Отчётность и визуализация"]]},
+  {label:"MS SQL Server · SSIS", items:[
+    "SQL · T-SQL","MS SQL Server",
+    ["SSIS (ETL packages)","SSIS (ETL paketlari)","SSIS (ETL-пакеты)"],
+    ["ETL processes","ETL jarayonlari","ETL-процессы"]]},
   {label:"Machine Learning", items:[
     "scikit-learn","XGBoost",
     ["Classification","Klassifikatsiya","Классификация"],
@@ -780,14 +786,23 @@ const SKILLS = [
     "Hugging Face","BERT · XLM-RoBERTa","LangChain",
     ["Text classification","Matn klassifikatsiyasi","Классификация текстов"],
     ["Tokenization","Tokenizatsiya","Токенизация"]]},
-  {label:["Data Analysis","Maʼlumotlar tahlili","Анализ данных"], items:[
-    "Pandas","NumPy","Matplotlib · Seaborn","SQL","Big Data"]},
   {label:"Python", items:[
     "NumPy · Pandas","FastAPI","Jupyter · Kaggle",
     ["Telegram bots","Telegram botlar","Telegram-боты"]]},
-  {label:"LaTeX", items:["Overleaf","Beamer","TikZ","BibTeX"]},
   {label:["Automation","Avtomatlashtirish","Автоматизация"], items:[
-    "Make.com","n8n","Vapi.ai","ElevenLabs","Telegram Bot API"]}
+    "Make.com","n8n","Vapi.ai","ElevenLabs","Telegram Bot API"]},
+  /* ── Matematika ko'nikmalari ── */
+  {label:["Numerical methods","Sonli usullar","Численные методы"], items:[
+    ["Quadrature formulas","Kvadratur formulalar","Квадратурные формулы"],
+    ["Difference schemes","Ayirmali sxemalar","Разностные схемы"],
+    ["Error estimates","Xatolik baholari","Оценки погрешности"],
+    "Maple"]},
+  {label:["Functional analysis","Funksional analiz","Функциональный анализ"], items:[
+    ["Sobolev spaces","Sobolev fazolari","Пространства Соболева"],
+    ["Hilbert spaces","Hilbert fazolari","Гильбертовы пространства"],
+    ["Extremal functions","Ekstremal funksiyalar","Экстремальные функции"],
+    ["Variational methods","Variatsion usullar","Вариационные методы"]]},
+  {label:"LaTeX", items:["Overleaf","Beamer","TikZ","BibTeX"]}
 ];
 
 /* ─── Til ─── */
